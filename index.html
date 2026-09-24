@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MELT — Burgers, Subs & Fries | Dehiwala & Colombo 03</title>
-  <meta name="description" content="MELT Burger Restaurant — Your favourite burgers, subs & fries! Smashed beef patties, crispy buttermilk chicken, loaded slutty fries, and hand-spun thick shakes. Open 1:30 PM to 11:00 PM daily for Dine In & Takeaway in Dehiwala and Colombo 03. 100% Halal.">
+  <title>KÍRI KÓPI — Specialty Coffee Shop & Bakery | Flower Road, Colombo 07</title>
+  <meta name="description" content="KÍRI KÓPI Specialty Coffee Shop & Bakery at 76/1 Flower Road, Colombo 07. Artisanal brews, Iced Tin Kiri Kōpi, Kyoto ceremonial matcha, all-day brunch, waffles, flaky bakery croissants and gourmet sandos. Open daily 7:30 AM to 10:00 PM. No reservations on weekends, walk-ins only.">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
-  <!-- Google Fonts: Fraunces (Chunky Vintage Display Serif) & Inter (Clean Geometric Sans) -->
+  <!-- Google Fonts: Fraunces (Chunky Vintage Display Serif) & Inter (Clean Geometric Sans) & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="/src/styles/main.css">
   <script>
     try {
-      const theme = localStorage.getItem('melt-theme-preference') || 'light';
+      const theme = localStorage.getItem('kiri-kopi-theme-preference') || 'light';
       if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
       } else {
@@ -29,9 +29,9 @@
   <!-- Floating Capsule Pill Navbar with Elastic Fluid Blob -->
   <header class="site-header">
     <nav class="nav-capsule-wrapper" aria-label="Main Navigation">
-      <a href="#hero" class="nav-brand" aria-label="MELT Burgers Home">
-        <img src="/melt-logo.jpg" alt="MELT Logo" class="nav-brand-img" />
-        <span>MELT</span>
+      <a href="#hero" class="nav-brand" aria-label="KÍRI KÓPI Home">
+        <img src="/kiri-kopi-logo.jpg" alt="KÍRI KÓPI Logo" class="nav-brand-img" />
+        <span>KÍRI KÓPI</span>
       </a>
 
       <div class="nav-divider" aria-hidden="true"></div>
@@ -44,6 +44,7 @@
         <li class="nav-link-item"><a href="#story" class="nav-link">Our Story</a></li>
         <li class="nav-link-item"><a href="#menu" class="nav-link">Menu</a></li>
         <li class="nav-link-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-link-item"><a href="#reservations" class="nav-link">Visit</a></li>
       </ul>
 
       <div class="nav-divider" aria-hidden="true"></div>
@@ -67,8 +68,8 @@
           </span>
         </button>
 
-        <!-- Quick Reserve / Order CTA -->
-        <a href="#reservations" class="nav-cta-btn">Order / Dine-In</a>
+        <!-- Quick Reserve / Visit CTA -->
+        <a href="#reservations" class="nav-cta-btn">Hours & Visit</a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Open mobile menu" aria-expanded="false">
@@ -86,20 +87,20 @@
       <a href="#hero" class="mobile-nav-link">Home</a>
       <a href="#highlights" class="mobile-nav-link">Menu Highlights</a>
       <a href="#story" class="mobile-nav-link">Our Story & Craft</a>
-      <a href="#menu" class="mobile-nav-link">Melt Menu</a>
-      <a href="#about" class="mobile-nav-link">About MELT</a>
+      <a href="#menu" class="mobile-nav-link">Kiri Kōpi Menu</a>
+      <a href="#about" class="mobile-nav-link">About Kíri Kópi</a>
       <a href="#reservations" class="mobile-nav-link">Hours & Location</a>
-      <a href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20order%20takeaway%20or%20inquire%20about%20a%20table." target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
-        <svg style="width: 17px; height: 17px; fill: currentColor;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        <span>Chat with Us on WhatsApp</span>
+      <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="mobile-nav-link" style="color: var(--brand-orange); display: flex; align-items: center; gap: 8px;">
+        <svg style="width: 17px; height: 17px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        <span>Instagram (@kirikopi.flowerroad)</span>
       </a>
-      <a href="#reservations" class="mobile-nav-cta">Order & Reserve</a>
+      <a href="#reservations" class="mobile-nav-cta">View Hours & Policy</a>
     </div>
   </header>
 
   <!-- Main Content Flow -->
   <main>
-    <!-- Section 1: Editorial Hero with Repeating Stacked Display Typography & Floating Burger Cutout -->
+    <!-- Section 1: Editorial Hero with Repeating Stacked Display Typography & Floating Cutout -->
     <section class="hero-editorial-section" id="hero">
       <div class="container">
         <!-- Live Cafe / Restaurant Status Pill -->
@@ -107,42 +108,42 @@
           <div class="badge-pill hero-status-badge" id="hero-status-badge">
             <span class="status-pulse-dot" id="status-pulse-dot"></span>
             <span class="hero-status-text">
-              <span id="cafe-status-label">Open Today</span> · <span id="cafe-status-sub">Closes at 11:00 PM · Dine In & Takeaway</span>
+              <span id="cafe-status-label">Open Today</span> · <span id="cafe-status-sub">Closes at 10:00 PM · Walk-Ins Welcome</span>
             </span>
           </div>
         </div>
 
-        <!-- Giant Repeating Stacked Typography with Floating Burger Cutout -->
+        <!-- Giant Repeating Stacked Typography with Floating Cutout -->
         <div class="hero-stacked-wrap">
           <h1 class="hero-stacked-title">
-            <span class="hero-stacked-line">MELT BURGERS</span>
-            <span class="hero-stacked-line">MELT BURGERS</span>
-            <span class="hero-stacked-line">MELT BURGERS</span>
+            <span class="hero-stacked-line">KÍRI KÓPI</span>
+            <span class="hero-stacked-line">KÍRI KÓPI</span>
+            <span class="hero-stacked-line">KÍRI KÓPI</span>
           </h1>
 
-          <!-- Real Smash Burger Cutout Floating Over Headline (100% Transparent Background) -->
+          <!-- Real Specialty Iced Coffee Cutout Floating Over Headline -->
           <img 
-            src="/melt-burger-cutout.png" 
-            alt="Melt’s Signature Double Smash Beef Burger with Molten Cheese" 
+            src="/kiri-kopi-hero-latte.png" 
+            alt="Kíri Kópi Signature Iced Specialty Coffee" 
             class="hero-floating-cutout"
-            title="Melt’s Signature Double Smash Beef Burger"
+            title="Kíri Kópi Signature Iced Specialty Coffee"
           />
         </div>
 
         <p class="hero-editorial-sub">
-          Your favourite burgers | Subs | Fries ! Handcrafted daily · <strong>Waidya Rd, Dehiwala & Colombo 03 📍</strong> · We are Halal 🙏🏽
+          Specialty Coffee Shop & Bakery · All-day breakfast, artisanal brews & fresh pastries · <strong>76/1 Flower Road, Col 7 📍</strong> · Walk-ins welcome
         </p>
 
         <div class="hero-pills-row">
-          <a href="#reservations" class="pill-action-btn">
-            <span>Order & Dine-In</span>
+          <a href="#menu" class="pill-action-btn">
+            <span>Explore Menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>
             </svg>
           </a>
-          <a href="#menu" class="pill-action-btn-outline">
-            <span>Explore Menu</span>
+          <a href="#reservations" class="pill-action-btn-outline">
+            <span>Hours & Location</span>
           </a>
         </div>
       </div>
@@ -152,39 +153,39 @@
     <section class="story-highlights-bar" id="highlights">
       <div class="container">
         <div class="story-highlights-container">
-          <!-- 1. Burgers & Subs 🍔 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-mains" aria-label="Explore Burgers and Subs">
+          <!-- 1. All-Day Brunch 🥐 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-mains" aria-label="Explore All-Day Brunch and Mains">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Burger SVG Icon -->
+                <!-- Croissant / Brunch SVG Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 11h16a1 1 0 0 0 1-1C20.5 5.5 16.7 3 12 3S3.5 5.5 3 10a1 1 0 0 0 1 1Z"></path>
-                  <path d="M5 14h14a1 1 0 0 1 1 1v1a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-1a1 1 0 0 1 1-1Z"></path>
-                  <line x1="3" y1="14" x2="21" y2="14"></line>
+                  <path d="m18 10-4.5 4.5a3 3 0 0 1-4.2 0L5 10a7 7 0 0 1 9.9-5.7L18 10Z"></path>
+                  <path d="m15.5 12.5 3 3a2.5 2.5 0 0 1 0 3.5l-1 1a2.5 2.5 0 0 1-3.5 0l-3-3"></path>
+                  <path d="m8.5 12.5-3 3a2.5 2.5 0 0 0 0 3.5l1 1a2.5 2.5 0 0 0 3.5 0l3-3"></path>
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Burgers & Subs <span class="heart-icon">🍔</span></span>
+            <span class="story-highlight-label">All-Day Brunch <span class="heart-icon">🥐</span></span>
           </button>
 
-          <!-- 2. Loaded Fries 🍟 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-snacks" aria-label="Explore Loaded Fries and Snacks">
+          <!-- 2. Sandos & Plates 🥪 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-snacks" aria-label="Explore Sandos and Light Plates">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Fries Box SVG Icon -->
+                <!-- Sandwich SVG Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 10l2 11h10l2-11H5Z"></path>
-                  <line x1="8" y1="10" x2="8" y2="4"></line>
-                  <line x1="12" y1="10" x2="12" y2="2"></line>
-                  <line x1="16" y1="10" x2="16" y2="4"></line>
+                  <path d="M3 11l18-5v12L3 18z"></path>
+                  <path d="M3 11v7"></path>
+                  <path d="M21 6v12"></path>
+                  <path d="M3 15h18"></path>
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Loaded Fries <span class="heart-icon">🍟</span></span>
+            <span class="story-highlight-label">Sandos & Plates <span class="heart-icon">🥪</span></span>
           </button>
 
           <!-- 3. Specialty Coffee ☕ -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-sips" aria-label="Explore Coffee and Sips">
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-sips" aria-label="Explore Specialty Coffee and Espresso">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
                 <!-- Steaming Coffee Cup Line Art Icon -->
@@ -198,60 +199,63 @@
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Coffee & Drinks <span class="heart-icon">☕</span></span>
+            <span class="story-highlight-label">Specialty Coffee <span class="heart-icon">☕</span></span>
           </button>
 
-          <!-- 4. Shakes & Beverages 🥤 -->
-          <button class="story-highlight-item story-highlight-pill" data-target="menu-beverages" aria-label="Explore Thick Shakes and Coolers">
+          <!-- 4. Matcha & Sips 🍵 -->
+          <button class="story-highlight-item story-highlight-pill" data-target="menu-beverages" aria-label="Explore Kyoto Matcha and Homemade Sodas">
             <div class="story-circle-outer">
               <div class="story-circle-inner">
-                <!-- Milkshake / Chilled Beverage Line Art Icon -->
+                <!-- Cold Beverage / Matcha Cup Icon -->
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M15.2 3a2 2 0 0 1 1.9 1.4L20 14a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6L6.9 4.4A2 2 0 0 1 8.8 3h6.4Z"></path>
-                  <path d="M6 9h12"></path>
-                  <path d="m14 2 2 5"></path>
+                  <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                  <line x1="6" y1="2" x2="6" y2="4"></line>
+                  <line x1="10" y1="2" x2="10" y2="4"></line>
+                  <line x1="14" y1="2" x2="14" y2="4"></line>
                 </svg>
               </div>
             </div>
-            <span class="story-highlight-label">Beverages & Shakes <span class="heart-icon">🥤</span></span>
+            <span class="story-highlight-label">Matcha & Sips <span class="heart-icon">🍵</span></span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- Section: Typographic Ribbon "Burgers that truly melt in your mouth" -->
-    <section class="coffee-quote-ribbon" aria-label="Melt Brand Quote">
+    <!-- Section: Typographic Ribbon "Coffee is a craft" -->
+    <section class="coffee-quote-ribbon" aria-label="Kiri Kopi Brand Quote">
       <div class="container">
         <h2 class="coffee-quote-title">
-          <span class="coffee-word-orange">Burgers</span> that truly melt in your mouth.
+          <span class="coffee-word-orange">Coffee</span> is a craft, and every cup tells a story.
         </h2>
         <p class="coffee-quote-sub">
-          Double smashed beef patties, molten cheddar cheese, loaded fries & handcrafted thick shakes in Dehiwala & Colombo 03.
+          Specialty single-origin roasts, Kyoto ceremonial matcha, all-day brunch & artisan bakes at 76/1 Flower Road, Colombo 07.
         </p>
       </div>
     </section>
 
-    <!-- Section 2: Solid Royal Purple Banner (Our Philosophy / Origins & Collage) -->
+    <!-- Section 2: Solid Roasted Espresso Banner (Our Philosophy / Origins & Collage) -->
     <section class="cobalt-banner-section" id="story">
       <div class="container">
         <div class="cobalt-banner-grid">
           <!-- Left: Editorial Prose & Origin Narrative -->
           <div>
             <span class="cobalt-pill-tag" style="margin-bottom: 20px;">
-              Your Favourite Burgers | Subs | Fries !
+              From Ella's Hills to Flower Road, Col 7
             </span>
             <h2 class="cobalt-banner-title">
-              Every burger begins with smash-seared patties, molten cheese, and genuine culinary passion.
+              Where specialty coffee craft meets warm bakery comforting bakes.
             </h2>
             <p class="cobalt-banner-prose">
-              Located on vibrant Waidya Road in Dehiwala and in Colombo 03, MELT is where burger dreams come alive. We sear 100% Halal beef patties on a scorching hot flat-top to lock in sizzling juices, toast buttery brioche buns to golden perfection, and smother our crispy fries in molten cheddar cheese. From our classic smash doubles and monster carnival stacks to loaded slutty chicken fries and Lotus Biscoff thick shakes, we deliver pure flavor that melts in your mouth.
+              Born in the misty mountain landscape of Ella and brought to Colombo’s leafy Flower Road, KÍRI KÓPI was created as an intentional coffee sanctuary. Here, we honor the rich Sri Lankan tradition of milk coffee reimagined through specialty roasts, poured into our signature vintage iced tins. Alongside freshly whisked ceremonial grade Kyoto matcha, artisan sourdough toasties, cassava waffles, and freshly rolled butter croissants, every detail is crafted for slow sips, rich conversations, and relaxed mornings.
             </p>
             <div class="cobalt-pill-tags">
-              <span class="cobalt-pill-tag">100% Halal Certified 🙏🏽</span>
-              <span class="cobalt-pill-tag">Waidya Rd, Dehiwala 📍</span>
-              <span class="cobalt-pill-tag">Colombo 03 Branch 📍</span>
-              <span class="cobalt-pill-tag">Daily 1:30 PM – 11:00 PM</span>
-              <span class="cobalt-pill-tag">DINE IN + TAKEAWAY</span>
+              <span class="cobalt-pill-tag">Specialty Coffee Shop ☕</span>
+              <span class="cobalt-pill-tag">Bakery & All-Day Brunch 🥐</span>
+              <span class="cobalt-pill-tag">76/1 Flower Road, Col 7 📍</span>
+              <span class="cobalt-pill-tag">Daily 7:30 AM – 10:00 PM ⏰</span>
+              <span class="cobalt-pill-tag">Weekends: Walk-Ins Only ✨</span>
+              <span class="cobalt-pill-tag">Work & Pet Friendly 🌿</span>
             </div>
           </div>
 
@@ -259,20 +263,20 @@
           <div class="cobalt-collage-wrap">
             <div class="collage-card-main">
               <img 
-                src="/melt-burger.jpg" 
-                alt="Juicy double smash beef burger with melted cheese at MELT" 
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+                alt="Aesthetic warm cafe ambiance at Kíri Kópi" 
               />
             </div>
             <div class="collage-card-secondary">
               <img 
-                src="/melt-loaded-fries.jpg" 
-                alt="Slutty loaded chicken cheesy fries at MELT" 
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
+                alt="Signature Iced Tin Kiri Kōpi specialty coffee" 
               />
             </div>
-            <!-- Floating mini loaded fries thumbnail -->
+            <!-- Floating mini latte thumbnail -->
             <img 
-              src="/melt-loaded-fries-cutout.png" 
-              alt="Floating loaded cheese fries" 
+              src="/kiri-kopi-hero-latte.png" 
+              alt="Floating iced latte" 
               class="collage-cutout-floating" 
             />
           </div>
@@ -280,17 +284,17 @@
       </div>
     </section>
 
-    <!-- Section: "IT'S BURGER O'CLOCK" Banner -->
+    <!-- Section: "IT'S KÓPI O'CLOCK" Banner -->
     <div class="brunch-oclock-section" id="brunch">
       <div class="container">
         <div class="brunch-oclock-wrap">
           <div class="brunch-oclock-title">
             <span class="brunch-line-top">IT’S</span>
-            <span class="brunch-line-highlight">BURGER</span>
+            <span class="brunch-line-highlight">KÓPI</span>
             <span class="brunch-line-bottom">O’CLOCK</span>
           </div>
           <p class="brunch-oclock-sub">
-            Your favourite burgers, subs & loaded fries · Smashed fresh daily from 1:30 PM to 11:00 PM in Dehiwala & Colombo 03.
+            Specialty coffee, fresh bakes & all-day breakfast · Served daily from 7:30 AM to 10:00 PM at Flower Road, Colombo 07.
           </p>
         </div>
       </div>
@@ -301,189 +305,189 @@
     <section class="editorial-menu-section" id="menu">
       <div class="container">
         <div class="editorial-menu-header">
-          <span class="section-label" style="display: inline-block; margin-bottom: 8px;">From Our Sizzle Grill & Shake Bar</span>
+          <span class="section-label" style="display: inline-block; margin-bottom: 8px;">From Our Espresso Bar, Bakery & Kitchen</span>
           <h2 class="editorial-menu-title">Our Signature Menu</h2>
           <p class="editorial-menu-sub">
-            Prepared fresh to order using 100% Halal beef, golden toasted brioche buns, molten cheddar, and house-crafted signature sauces.
+            Crafted fresh daily with single-origin beans, Kyoto ceremonial matcha, farm-fresh eggs, and artisan bakery delights.
           </p>
         </div>
 
         <div class="editorial-menu-rows">
-          <!-- Row 1: Left Circular Vignette (Burger) · Right Classical Price List (Mains - 4 items) -->
+          <!-- Row 1: Left Circular Vignette (KK Diner Waffle) · Right Classical Price List (Mains - 4 items) -->
           <div class="editorial-row" data-category="mains" id="menu-mains">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="/melt-burger.jpg" alt="Melt Signature Double Beef Burger" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" alt="KK Diner Waffle with Nashville Fried Chicken" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Double Beef Burger</div>
+                <div class="vignette-caption">KK Diner Waffle</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Mains · Burgers & Subs</span>
+              <span class="menu-category-badge">Mains · Brunch & Signatures</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Double Beef Burger -->
-                <div class="price-item-row is-active" data-img="/melt-burger.jpg" data-name="Melt Signature Double Beef Burger" tabindex="0" role="button" aria-label="Select Melt Signature Double Beef Burger">
+                <!-- Item 1: KK Diner Waffle -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80" data-name="KK Diner Waffle" tabindex="0" role="button" aria-label="Select KK Diner Waffle">
                   <div class="price-item-top">
-                    <span class="price-item-name">Melt Signature Double Beef Burger</span>
-                    <span class="price-item-val">Rs. 2,720</span>
+                    <span class="price-item-name">KK Diner Waffle</span>
+                    <span class="price-item-val">Rs. 2,850</span>
                   </div>
-                  <p class="price-item-desc">Two smashed beef patties grilled to juicy perfection with double molten cheddar, caramelized onions, crisp greens, and signature Melt secret sauce on a toasted sesame brioche bun. Served with fries.</p>
+                  <p class="price-item-desc">Crispy rice and cassava waffle served with hot whipped chili honey, Nashville-dipped fried chicken breast, roasted garlic aioli, and house-pickled burger cucumbers.</p>
                 </div>
-                <!-- Item 2: Buttermilk Chicken Burger -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80" data-name="Melt Crispy Buttermilk Chicken Burger" tabindex="0" role="button" aria-label="Select Melt Crispy Buttermilk Chicken Burger">
+                <!-- Item 2: Smashed Beef Burger -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" data-name="Smashed Beef Burger" tabindex="0" role="button" aria-label="Select Smashed Beef Burger">
                   <div class="price-item-top">
-                    <span class="price-item-name">Melt Crispy Buttermilk Chicken Burger</span>
-                    <span class="price-item-val">Rs. 1,840</span>
+                    <span class="price-item-name">Smashed Beef Burger</span>
+                    <span class="price-item-val">Rs. 2,900</span>
                   </div>
-                  <p class="price-item-desc">Crispy golden fried buttermilk chicken breast dunked in spicy house glaze, topped with crunchy shredded slaw, melted cheese, and tangy pickles on a buttered brioche bun. Served with fries.</p>
+                  <p class="price-item-desc">Homemade smashed prime beef patty seared on the flat-top with sweet caramelized onions, melted cheddar, and crisp gherkins in a bakery milk bun. Served with fries.</p>
                 </div>
-                <!-- Item 3: Carnival Monster Burger -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" data-name="Melt Carnival Monster Burger" tabindex="0" role="button" aria-label="Select Melt Carnival Monster Burger">
+                <!-- Item 3: KK Chilli Eggs -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" data-name="KK Chilli Eggs" tabindex="0" role="button" aria-label="Select KK Chilli Eggs">
                   <div class="price-item-top">
-                    <span class="price-item-name">Melt Carnival Monster Burger</span>
-                    <span class="price-item-val">Rs. 2,720</span>
+                    <span class="price-item-name">KK Chilli Eggs</span>
+                    <span class="price-item-val">Rs. 2,650</span>
                   </div>
-                  <p class="price-item-desc">The ultimate hunger crusher: stacked beef patty and crispy chicken fillet layered with overflowing melted cheese, beef bacon strips, golden onion rings, and smoky BBQ aioli. Served with fries.</p>
+                  <p class="price-item-desc">Two poached farm eggs served over rich homemade chili oil, cooling herbed tzatziki yogurt, and spiced beef merguez sausages on wood-fired crusty ciabatta.</p>
                 </div>
-                <!-- Item 4: Crispy Chicken Submarine -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80" data-name="Signature Crispy Chicken Submarine" tabindex="0" role="button" aria-label="Select Signature Crispy Chicken Submarine">
+                <!-- Item 4: Jaggery Beef Croissant -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" data-name="Jaggery Beef Croissant" tabindex="0" role="button" aria-label="Select Jaggery Beef Croissant">
                   <div class="price-item-top">
-                    <span class="price-item-name">Signature Crispy Chicken Submarine</span>
-                    <span class="price-item-val">Rs. 2,250</span>
+                    <span class="price-item-name">Jaggery Beef Croissant</span>
+                    <span class="price-item-val">Rs. 2,950</span>
                   </div>
-                  <p class="price-item-desc">Toasted footlong artisan sub roll stuffed generously with tender crispy chicken strips, melted mozzarella & aged cheddar, sautéed bell peppers, and creamy garlic herb sauce. Served with fries.</p>
+                  <p class="price-item-desc">Slow-cooked pulled jaggery-glazed beef, caramelized onion jam, and crunchy red cabbage salad folded inside a warm French butter croissant, served with homemade raita.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 2 (Reversed): Left Classical Price List (Snacks - 3 items) · Right Circular Vignette (Loaded Fries) -->
+          <!-- Row 2 (Reversed): Left Classical Price List (Snacks - 3 items) · Right Circular Vignette (Grilled Cheese) -->
           <div class="editorial-row is-reversed" data-category="snacks" id="menu-snacks">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="/melt-loaded-fries.jpg" alt="Slutty Crispy Chicken Loaded Fries" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" alt="Grilled Cheese in Shokupan" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Slutty Cheesy Fries</div>
+                <div class="vignette-caption">Grilled Cheese Shokupan</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Snacks · Loaded Fries & Sides</span>
+              <span class="menu-category-badge">Snacks & Sandos · Light Plates</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Slutty Loaded Fries -->
-                <div class="price-item-row is-active" data-img="/melt-loaded-fries.jpg" data-name="Slutty Crispy Chicken Loaded Fries" tabindex="0" role="button" aria-label="Select Slutty Crispy Chicken Loaded Fries">
+                <!-- Item 1: Grilled Cheese Shokupan -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80" data-name="Grilled Cheese in Shokupan [V]" tabindex="0" role="button" aria-label="Select Grilled Cheese in Shokupan">
                   <div class="price-item-top">
-                    <span class="price-item-name">Slutty Crispy Chicken Loaded Fries</span>
-                    <span class="price-item-val">Rs. 2,800</span>
+                    <span class="price-item-name">Grilled Cheese in Shokupan [V]</span>
+                    <span class="price-item-val">Rs. 2,250</span>
                   </div>
-                  <p class="price-item-desc">A monster basket of golden crispy skin-on fries smothered in hot liquid cheddar cheese, crispy spiced chicken bites, pickled jalapeños, bacon bits, and house Melt drizzle.</p>
+                  <p class="price-item-desc">Whipped hot chili honey, smoked cheese, local aged gouda, and gooey mozzarella griddled golden in thick Japanese shokupan milk bread.</p>
                 </div>
-                <!-- Item 2: Glazed Chicken Wings -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80" data-name="Glazed Wings (Mango BBQ & Kochchi)" tabindex="0" role="button" aria-label="Select Glazed Wings (Mango BBQ & Kochchi)">
+                <!-- Item 2: Smoked Salmon Sando -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80" data-name="Smoked Salmon Sando" tabindex="0" role="button" aria-label="Select Smoked Salmon Sando">
                   <div class="price-item-top">
-                    <span class="price-item-name">Glazed Wings (Mango BBQ & Kochchi)</span>
-                    <span class="price-item-val">Rs. 1,650</span>
+                    <span class="price-item-name">Smoked Salmon Sando</span>
+                    <span class="price-item-val">Rs. 2,750</span>
                   </div>
-                  <p class="price-item-desc">Crispy jumbo chicken wings glazed in your choice of sweet Mango BBQ or fiery Sri Lankan kochchi chili pepper sauce, garnished with toasted sesame.</p>
+                  <p class="price-item-desc">Artisan house focaccia layered with delicate Norwegian smoked salmon, whipped caper cream cheese, shaved red onion, and fresh garden dill.</p>
                 </div>
-                <!-- Item 3: Cajun Seasoned Fries -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" data-name="Melt Cajun Seasoned Fries & Warm Dip" tabindex="0" role="button" aria-label="Select Melt Cajun Seasoned Fries & Warm Dip">
+                <!-- Item 3: Breakfast Tacos -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80" data-name="Breakfast Tacos [VO]" tabindex="0" role="button" aria-label="Select Breakfast Tacos">
                   <div class="price-item-top">
-                    <span class="price-item-name">Melt Cajun Seasoned Fries & Warm Dip</span>
-                    <span class="price-item-val">Rs. 750</span>
+                    <span class="price-item-name">Breakfast Tacos [VO]</span>
+                    <span class="price-item-val">Rs. 2,350</span>
                   </div>
-                  <p class="price-item-desc">Freshly crisped potato fries tossed generously in our house Cajun spice blend, served piping hot with a side of warm creamy cheese dip.</p>
+                  <p class="price-item-desc">Soft corn tortillas loaded with creamy scrambled eggs, crumbled Greek feta, fresh guacamole, zesty pico de gallo, fresh coriander, and house sour yogurt drizzle.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 3: Left Circular Vignette (Iced Spanish Latte) · Right Classical Price List (Coffee & Drinks - 4 items) -->
+          <!-- Row 3: Left Circular Vignette (Iced Tin Kiri Kōpi) · Right Classical Price List (Coffee & Drinks - 4 items) -->
           <div class="editorial-row" data-category="sips" id="menu-sips">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Melt Signature Iced Spanish Latte" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" alt="Iced Tin Kiri Kōpi Specialty Milk Coffee" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Iced Spanish Latte</div>
+                <div class="vignette-caption">Iced Tin Kiri Kōpi</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Coffee & Drinks · Handcrafted Sips</span>
+              <span class="menu-category-badge">Specialty Coffee · Handcrafted Brews</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Iced Spanish Latte -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" data-name="Melt Signature Iced Spanish Latte" tabindex="0" role="button" aria-label="Select Melt Signature Iced Spanish Latte">
+                <!-- Item 1: Iced Tin Kiri Kōpi -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" data-name="Iced Tin Kiri Kōpi" tabindex="0" role="button" aria-label="Select Iced Tin Kiri Kōpi">
                   <div class="price-item-top">
-                    <span class="price-item-name">Melt Signature Iced Spanish Latte</span>
-                    <span class="price-item-val">Rs. 850</span>
+                    <span class="price-item-name">Iced Tin Kiri Kōpi</span>
+                    <span class="price-item-val">Rs. 1,180</span>
                   </div>
-                  <p class="price-item-desc">Double ristretto espresso pulled over creamy condensed milk and chilled whole milk, crowned with silky microfoam and caramel dust.</p>
+                  <p class="price-item-desc">The defining Kiri Kōpi signature: double specialty espresso pulled over sweet condensed milk and chilled whole milk, served over crystal ice in our vintage tin cup.</p>
                 </div>
-                <!-- Item 2: Salted Caramel Latte -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=600&q=80" data-name="Salted Caramel Melt Latte" tabindex="0" role="button" aria-label="Select Salted Caramel Melt Latte">
+                <!-- Item 2: Tiramisu Latte -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80" data-name="Tiramisu Latte (Hot or Cold)" tabindex="0" role="button" aria-label="Select Tiramisu Latte">
                   <div class="price-item-top">
-                    <span class="price-item-name">Salted Caramel Melt Latte</span>
-                    <span class="price-item-val">Rs. 890</span>
+                    <span class="price-item-name">Tiramisu Latte (Hot or Cold)</span>
+                    <span class="price-item-val">Rs. 1,280</span>
                   </div>
-                  <p class="price-item-desc">Rich specialty double espresso poured over iced milk, buttery sea-salt caramel ribbons, and finished with a cold cream foam crown.</p>
+                  <p class="price-item-desc">Bold espresso poured over chilled whole milk, topped with a velvety crown of mascarpone sweet cream foam, dark Dutch cocoa dusting, and ladyfinger biscuit aroma.</p>
                 </div>
-                <!-- Item 3: Artisan Double Flat White -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" data-name="Artisan Double Flat White" tabindex="0" role="button" aria-label="Select Artisan Double Flat White">
+                <!-- Item 3: KK Cold Foam - Sicilian Pistachio -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" data-name="KK Cold Foam - Sicilian Pistachio" tabindex="0" role="button" aria-label="Select KK Cold Foam Sicilian Pistachio">
                   <div class="price-item-top">
-                    <span class="price-item-name">Artisan Double Flat White</span>
-                    <span class="price-item-val">Rs. 720</span>
+                    <span class="price-item-name">KK Cold Foam - Sicilian Pistachio</span>
+                    <span class="price-item-val">Rs. 1,450</span>
                   </div>
-                  <p class="price-item-desc">Precision double espresso pulled from rich roasted beans, harmonized 1:1 with velvety textured steamed microfoam and free-pour latte art.</p>
+                  <p class="price-item-desc">Double shot of rich espresso on iced milk, topped with an airy cold foam whipped with pure Sicilian pistachio paste and crushed toasted nut crumbles.</p>
                 </div>
-                <!-- Item 4: Cold Brew & Citrus Tonic -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" data-name="Single-Origin Cold Brew & Citrus Tonic" tabindex="0" role="button" aria-label="Select Single-Origin Cold Brew & Citrus Tonic">
+                <!-- Item 4: Orange Cold Brew -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80" data-name="Orange Cold Brew" tabindex="0" role="button" aria-label="Select Orange Cold Brew">
                   <div class="price-item-top">
-                    <span class="price-item-name">Single-Origin Cold Brew & Citrus Tonic</span>
-                    <span class="price-item-val">Rs. 780</span>
+                    <span class="price-item-name">Orange Cold Brew</span>
+                    <span class="price-item-val">Rs. 1,180</span>
                   </div>
-                  <p class="price-item-desc">18-hour slow steeped single-origin cold brew coffee poured over crystal clear ice with sparkling citrus tonic and crushed mint leaves.</p>
+                  <p class="price-item-desc">18-hour single origin cold brew coffee steeped low and slow, poured over crystalline ice with freshly pressed Valencia orange juice and fragrant citrus oils.</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Row 4 (Reversed): Left Classical Price List (Beverages & Shakes - 3 items) · Right Circular Vignette (Lotus Shake) -->
+          <!-- Row 4 (Reversed): Left Classical Price List (Bakery, Matcha & Drinks - 3 items) · Right Circular Vignette (French Toast) -->
           <div class="editorial-row is-reversed" data-category="refreshers" id="menu-beverages">
             <div class="editorial-vignette-col">
               <div class="vignette-frame">
                 <div class="vignette-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Loaded Lotus Biscoff Thick Shake" class="vignette-img" />
+                  <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" alt="KK Brioche French Toast with Berry Compote" class="vignette-img" />
                 </div>
-                <div class="vignette-caption">Lotus Biscoff Shake</div>
+                <div class="vignette-caption">KK French Toast</div>
               </div>
             </div>
             <div class="editorial-list-col">
-              <span class="menu-category-badge">Beverages · Thick Shakes & Coolers</span>
+              <span class="menu-category-badge">Bakery, Matcha & Refreshers</span>
               <div class="menu-price-items-list">
-                <!-- Item 1: Lotus Biscoff Shake -->
-                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" data-name="Loaded Lotus Biscoff Thick Shake" tabindex="0" role="button" aria-label="Select Loaded Lotus Biscoff Thick Shake">
+                <!-- Item 1: KK French Toast -->
+                <div class="price-item-row is-active" data-img="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" data-name="KK French Toast" tabindex="0" role="button" aria-label="Select KK French Toast">
                   <div class="price-item-top">
-                    <span class="price-item-name">Loaded Lotus Biscoff Thick Shake</span>
-                    <span class="price-item-val">Rs. 1,250</span>
+                    <span class="price-item-name">KK French Toast</span>
+                    <span class="price-item-val">Rs. 2,650</span>
                   </div>
-                  <p class="price-item-desc">Hand-spun thick shake crafted with rich vanilla ice cream, Belgian Lotus Biscoff spread, crushed spiced cookies, and whipped cream.</p>
+                  <p class="price-item-desc">House-baked golden brioche soaked in cinnamon vanilla egg custard, topped with whipped cream cheese, wild blueberry compote, and warm maple berry drizzle.</p>
                 </div>
-                <!-- Item 2: Belgian Chocolate Velvet Shake -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" data-name="Belgian Chocolate Velvet Shake" tabindex="0" role="button" aria-label="Select Belgian Chocolate Velvet Shake">
+                <!-- Item 2: Kyoto Strawberry Matcha -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80" data-name="Kyoto Strawberry Matcha Latté" tabindex="0" role="button" aria-label="Select Kyoto Strawberry Matcha Latté">
                   <div class="price-item-top">
-                    <span class="price-item-name">Belgian Chocolate Velvet Shake</span>
-                    <span class="price-item-val">Rs. 1,150</span>
+                    <span class="price-item-name">Kyoto Strawberry Matcha Latté</span>
+                    <span class="price-item-val">Rs. 1,480</span>
                   </div>
-                  <p class="price-item-desc">Ultra-dense dark chocolate shake blended with premium Dutch cocoa ice cream, molten chocolate fudge swirl, and topped with chocolate curls.</p>
+                  <p class="price-item-desc">Ceremonial Grade green tea from Kyoto, Japan, hand-whisked to order and gently layered over sweet homemade strawberry compote and silky chilled milk.</p>
                 </div>
-                <!-- Item 3: Passionfruit Mojito Cooler -->
-                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" data-name="Passionfruit Mojito Cooler" tabindex="0" role="button" aria-label="Select Passionfruit Mojito Cooler">
+                <!-- Item 3: Frozen Naarang Lemonade -->
+                <div class="price-item-row" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" data-name="Frozen Naarang Lemonade" tabindex="0" role="button" aria-label="Select Frozen Naarang Lemonade">
                   <div class="price-item-top">
-                    <span class="price-item-name">Passionfruit Mojito Cooler</span>
-                    <span class="price-item-val">Rs. 750</span>
+                    <span class="price-item-name">Frozen Naarang Lemonade</span>
+                    <span class="price-item-val">Rs. 980</span>
                   </div>
-                  <p class="price-item-desc">Freshly crushed island passionfruit pulp, fresh garden mint, key lime juice, and sparkling soda served over crushed crystal ice.</p>
+                  <p class="price-item-desc">Indigenous Sri Lankan naarang citrus cold-pressed and blended into a glacial slush with garden mint leaves, key lime zest, and raw cane sugar.</p>
                 </div>
               </div>
             </div>
@@ -492,39 +496,39 @@
       </div>
     </section>
 
-    <!-- Section 4: Typographic Callout Ribbon & 3 Warm Packaging Cards -->
+    <!-- Section 4: Typographic Callout Ribbon & 3 Warm Experience Cards -->
     <section class="order-callout-section" id="order">
       <div class="container">
         <div class="stacked-order-wrap">
           <h2 class="stacked-order-title">
             VISIT TODAY<br>
-            MELT<br>
-            BURGERS • SUBS • FRIES
+            KÍRI KÓPI<br>
+            COFFEE • BAKERY • BRUNCH
           </h2>
-          <img src="/melt-loaded-fries-cutout.png" alt="Melt’s Loaded Cheesy Fries" class="order-pedestal-cake">
+          <img src="/kiri-kopi-hero-latte.png" alt="Kíri Kópi Signature Coffee" class="order-pedestal-cake">
         </div>
 
-        <!-- 3 Branded Purple & Yellow Cards -->
+        <!-- 3 Branded Experience Cards -->
         <div class="packaging-cards-grid">
-          <!-- Card 1: Dine-In Experience -->
+          <!-- Card 1: Specialty Coffee Bar -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
                 <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z"></path>
-                <line x1="6" y1="1" x2="6" y2="4"></line>
-                <line x1="10" y1="1" x2="10" y2="4"></line>
-                <line x1="14" y1="1" x2="14" y2="4"></line>
+                <line x1="6" y1="2" x2="6" y2="4"></line>
+                <line x1="10" y1="2" x2="10" y2="4"></line>
+                <line x1="14" y1="2" x2="14" y2="4"></line>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Dine In Experience</h3>
+            <h3 class="packaging-card-title">Specialty Coffee Bar</h3>
             <p class="packaging-card-desc">
-              Savor piping-hot smash burgers, crispy chicken subs, and loaded fries fresh from the grill in our cozy Dehiwala & Colombo 03 seating.
+              Experience manual brews (V60, Chemex, French Press), espresso craft, and our iconic Iced Tin Kiri Kōpi pulled by skilled baristas.
             </p>
-            <a href="#reservations" class="packaging-card-btn">Dine-In Inquiries</a>
+            <a href="#menu" class="packaging-card-btn">Explore Coffee Bar</a>
           </div>
 
-          <!-- Card 2: Takeaway & Counter Sips -->
+          <!-- Card 2: Bakery & All-Day Brunch -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -533,46 +537,44 @@
                 <path d="M16 10a4 4 0 0 1-8 0"></path>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Takeaway & Quick Bites</h3>
+            <h3 class="packaging-card-title">Bakery & Takeaway</h3>
             <p class="packaging-card-desc">
-              Grab your favourite burgers, footlong subs, or loaded fries on the go. Call or WhatsApp ahead for express counter pickup.
+              Flaky butter croissants, fresh brioche french toasts, Japanese shokupan toasties, and bottled cold brews ready for express pickup.
             </p>
             <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 4px;">
-              <a href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20order%20takeaway." target="_blank" rel="noopener noreferrer" class="packaging-card-btn">
-                WhatsApp Order
+              <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="packaging-card-btn">
+                Follow Instagram
               </a>
-              <a href="https://www.instagram.com/meltinyour.mouth/" target="_blank" rel="noopener noreferrer" class="packaging-card-btn" style="background: transparent; border: 1px solid var(--brand-orange); color: var(--brand-orange) !important;">
-                Instagram
+              <a href="#reservations" class="packaging-card-btn" style="background: transparent; border: 1px solid var(--brand-yellow); color: var(--text-primary) !important;">
+                Opening Hours
               </a>
             </div>
           </div>
 
-          <!-- Card 3: Gatherings & Feasts -->
+          <!-- Card 3: Flower Road Ambiance & Work-Friendly Spot -->
           <div class="packaging-card">
             <div class="packaging-card-visual">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="8" width="18" height="4" rx="1"></rect>
-                <path d="M12 8v13"></path>
-                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
-                <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path>
+                <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                <line x1="2" y1="20" x2="22" y2="20"></line>
               </svg>
             </div>
-            <h3 class="packaging-card-title">Feasts & Party Orders</h3>
+            <h3 class="packaging-card-title">Aesthetic Haven</h3>
             <p class="packaging-card-desc">
-              Feeding the crew? Order curated burger boxes, loaded fries party platters, and wing buckets for office lunches or friend hangouts.
+              Rustic modern interior, exposed brick, natural light, high-speed Wi-Fi, and a relaxed environment for remote work and friendly catch-ups.
             </p>
-            <a href="#reservations" class="packaging-card-btn">Party Catering</a>
+            <a href="#reservations" class="packaging-card-btn">Find Us on Map</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 5: Solid Royal Purple Band — Our Celebrated Specialties (3 + 2 Circular Badges) -->
+    <!-- Section 5: Solid Dark Brown Band — Our Celebrated Specialties (3 + 2 Circular Badges) -->
     <section class="specialties-blue-section" id="specialties">
       <div class="container">
         <h2 class="specialties-header-title">Our Most Celebrated Specialties</h2>
         <p class="specialties-header-sub">
-          The five crowd favorites handcrafted fresh daily at MELT in Dehiwala & Colombo 03.
+          The five crowd favorites handcrafted fresh daily at KÍRI KÓPI on Flower Road, Colombo 07.
         </p>
 
         <div class="specialties-badges-wrap">
@@ -580,26 +582,26 @@
           <div class="specialties-row-3">
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="/melt-burger.jpg" alt="Melt Double Beef Burger" />
+                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&q=80" alt="Iced Tin Kiri Kōpi" />
               </div>
-              <span class="specialty-badge-name">Double Beef Burger</span>
-              <span class="specialty-badge-price">Rs. 2,720</span>
+              <span class="specialty-badge-name">Iced Tin Kiri Kōpi</span>
+              <span class="specialty-badge-price">Rs. 1,180</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="/melt-loaded-fries.jpg" alt="Slutty Loaded Cheesy Fries" />
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=400&q=80" alt="KK Diner Waffle" />
               </div>
-              <span class="specialty-badge-name">Slutty Cheesy Fries</span>
-              <span class="specialty-badge-price">Rs. 2,800</span>
+              <span class="specialty-badge-name">KK Diner Waffle</span>
+              <span class="specialty-badge-price">Rs. 2,850</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=400&q=80" alt="Loaded Lotus Biscoff Shake" />
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" alt="KK Chilli Eggs" />
               </div>
-              <span class="specialty-badge-name">Lotus Biscoff Shake</span>
-              <span class="specialty-badge-price">Rs. 1,250</span>
+              <span class="specialty-badge-name">KK Chilli Eggs</span>
+              <span class="specialty-badge-price">Rs. 2,650</span>
             </a>
           </div>
 
@@ -607,45 +609,45 @@
           <div class="specialties-row-2">
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=400&q=80" alt="Crispy Chicken Submarine" />
+                <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=400&q=80" alt="Kyoto Strawberry Matcha" />
               </div>
-              <span class="specialty-badge-name">Crispy Chicken Sub</span>
-              <span class="specialty-badge-price">Rs. 2,250</span>
+              <span class="specialty-badge-name">Kyoto Strawberry Matcha</span>
+              <span class="specialty-badge-price">Rs. 1,480</span>
             </a>
 
             <a href="#menu" class="specialty-badge-card">
               <div class="specialty-badge-circle">
-                <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=400&q=80" alt="Iced Spanish Latte" />
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=400&q=80" alt="Jaggery Beef Croissant" />
               </div>
-              <span class="specialty-badge-name">Iced Spanish Latte</span>
-              <span class="specialty-badge-price">Rs. 850</span>
+              <span class="specialty-badge-name">Jaggery Beef Croissant</span>
+              <span class="specialty-badge-price">Rs. 2,950</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 6: About MELT — Flavor Obsession & Review Bubble -->
+    <!-- Section 6: About KÍRI KÓPI — Flower Road Sanctuary & Review Bubble -->
     <section class="community-story-section" id="about">
       <div class="container">
         <div class="community-grid">
           <!-- Left: Narrative & Customer Speech Bubble -->
           <div>
-            <span class="section-label" style="display: inline-block; margin-bottom: 8px;">Dehiwala & Colombo 03</span>
+            <span class="section-label" style="display: inline-block; margin-bottom: 8px;">76/1 Flower Road, Colombo 07</span>
             <div class="community-quote-block">
-              "Burgers so intensely juicy and cheesy they literally melt in your mouth."
+              "The warmth of Ella's hill country brewed into Colombo’s most aesthetic coffee sanctuary."
             </div>
             <p class="community-prose">
-              Step in from Galle Road or Waidya Road into a haven of sizzling smashed patties, toasted brioche, and golden molten cheese. Whether you are catching up over dinner with friends, picking up late-night takeaways, or treating yourself to our iconic loaded fries and Biscoff shakes, MELT is your ultimate comfort spot. 100% Halal certified.
+              Step in from bustling Flower Road into a light-filled haven of freshly pulled espresso, Kyoto ceremonial matcha, warm butter croissants, and soothing acoustic tunes. Whether you are settling in with your laptop for a focused morning, catching up over all-day brunch with friends, or enjoying our signature iced tin coffee, KÍRI KÓPI welcomes you with open doors.
             </p>
 
             <!-- Review Speech Bubble -->
             <div class="review-bubble-card">
               <div class="review-stars">★★★★★</div>
               <p class="review-text">
-                "Hands down the best smash burger and loaded fries in Colombo. The crispy edges on the double beef patty with that molten cheese drip is just perfection. Pair it with the Lotus Biscoff shake and you are in heaven."
+                "Hands down the best specialty coffee experience in Colombo 7. The Iced Tin Kiri Kōpi is rich, velvety and nostalgic, and the KK Diner Waffle with hot whipped honey is an absolute must-try. Such a peaceful, aesthetic cafe vibe!"
               </p>
-              <div class="review-author">— Dinuka R. · Colombo Foodie & Local Guide</div>
+              <div class="review-author">— Colombo Coffee Connoisseur & Food Guide</div>
             </div>
           </div>
 
@@ -653,15 +655,15 @@
           <div style="display: flex; flex-direction: column; gap: 20px;">
             <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.12); border: 2px solid var(--border-color);">
               <img 
-                src="/melt-burger.jpg" 
-                alt="Signature Melt Double Beef Burger" 
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+                alt="Aesthetic cafe seating at Kíri Kópi Flower Road" 
                 style="width: 100%; height: 280px; object-fit: cover; display: block;"
               />
             </div>
             <div style="border-radius: 18px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.12); border: 2px solid var(--border-color);">
               <img 
-                src="/melt-loaded-fries.jpg" 
-                alt="Slutty Loaded Crispy Chicken Cheesy Fries" 
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80" 
+                alt="Signature Iced Coffee Drink at Kíri Kópi" 
                 style="width: 100%; height: 220px; object-fit: cover; display: block;"
               />
             </div>
@@ -670,77 +672,77 @@
       </div>
     </section>
 
-    <!-- Section 7: Reservations & Visit Engine -->
+    <!-- Section 7: Visit & Location Engine (With Clear Weekend Walk-Ins Policy) -->
     <section class="reservation-section" id="reservations">
       <div class="container">
         <div style="max-width: 640px; margin-bottom: 36px;">
-          <span class="section-label">Visit, Takeaway & Inquiries</span>
-          <h2 class="section-title">Order & Dine-In at <em>MELT Burgers</em></h2>
+          <span class="section-label">Visit, Hours & Directions</span>
+          <h2 class="section-title">Visit Us at <em>KÍRI KÓPI Flower Road</em></h2>
           <p class="section-subtitle">
-            We welcome walk-in guests daily and take quick takeaway pre-orders. Reach out to our team directly via WhatsApp, Instagram or phone.
+            Open daily for specialty coffee, bakery bakes & all-day brunch. Walk-ins are always warmly welcomed.
           </p>
         </div>
 
         <div class="reservation-grid">
-          <!-- Left: Direct Booking Channels Card -->
+          <!-- Left: Direct Booking Channels Card & Weekend Policy -->
           <div class="reservation-card reservation-direct-card">
             <div class="direct-booking-header">
               <span class="direct-badge">
                 <span class="direct-badge-dot"></span>
-                Direct Confirmation
+                Walk-In & Reservation Policy
               </span>
-              <h3 class="direct-booking-title">Order via WhatsApp, Instagram or Call</h3>
+              <h3 class="direct-booking-title">Weekend Walk-Ins & Direct Inquiries</h3>
               <p class="direct-booking-desc">
-                No complicated logins or waitlists. Connect directly with our team to place your takeaway orders, check seating availability, or plan group feasts.
+                <strong>Important:</strong> On Saturdays & Sundays, we do not take table reservations—walk-ins only! For weekday table inquiries or bakery takeaway pre-orders, feel free to reach out directly.
               </p>
             </div>
 
             <div class="direct-channels-stack">
-              <!-- Channel 1: WhatsApp Table Booking -->
-              <a href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20place%20an%20order%20%2F%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-whatsapp">
-                <div class="direct-channel-icon">
-                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                </div>
-                <div class="direct-channel-meta">
-                  <div class="direct-channel-top">
-                    <span class="direct-channel-name">Order via WhatsApp</span>
-                    <span class="direct-channel-tag">Fastest Reply</span>
-                  </div>
-                  <p class="direct-channel-hint">+94 75 735 2707 · Drop your order for speedy preparation</p>
-                </div>
-                <div class="direct-channel-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                </div>
-              </a>
-
-              <!-- Channel 2: Instagram Melt Burgers -->
-              <a href="https://www.instagram.com/meltinyour.mouth/" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-instagram">
+              <!-- Channel 1: Instagram Kiri Kopi Flower Road -->
+              <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-instagram">
                 <div class="direct-channel-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
                 </div>
                 <div class="direct-channel-meta">
                   <div class="direct-channel-top">
-                    <span class="direct-channel-name">DM on Instagram (@meltinyour.mouth)</span>
-                    <span class="direct-channel-tag">Social</span>
+                    <span class="direct-channel-name">Instagram (@kirikopi.flowerroad)</span>
+                    <span class="direct-channel-tag">Daily Updates</span>
                   </div>
-                  <p class="direct-channel-hint">Daily mouthwatering drops, specials & community love</p>
+                  <p class="direct-channel-hint">Special seasonal drops, fresh bakes, stories & events</p>
                 </div>
                 <div class="direct-channel-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </div>
               </a>
 
-              <!-- Channel 3: Google Maps Navigation -->
-              <a href="https://www.google.com/maps?q=MELT,+Waidya+Rd,+Dehiwala-Mount+Lavinia&ftid=0x3ae25b005b99e217:0xed2d95f3212cb9e1&entry=gps" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-maps">
+              <!-- Channel 2: Google Maps Navigation -->
+              <a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-maps">
                 <div class="direct-channel-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <div class="direct-channel-meta">
                   <div class="direct-channel-top">
-                    <span class="direct-channel-name">Find on Google Maps (Dehiwala)</span>
-                    <span class="direct-channel-tag">Navigation</span>
+                    <span class="direct-channel-name">Find on Google Maps (Flower Road)</span>
+                    <span class="direct-channel-tag">Directions</span>
                   </div>
-                  <p class="direct-channel-hint">Waidya Rd, Dehiwala-Mount Lavinia · Just off Galle Road</p>
+                  <p class="direct-channel-hint">76/1 Flower Road, Colombo 07 · Central Colombo location</p>
+                </div>
+                <div class="direct-channel-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </div>
+              </a>
+
+              <!-- Channel 3: WhatsApp Inquiry -->
+              <a href="https://wa.me/94760000000?text=Hi%20K%C3%ADri%20K%C3%B3pi%2C%20I%20would%20like%20to%20inquire%20about%20visiting." target="_blank" rel="noopener noreferrer" class="direct-channel-btn is-whatsapp">
+                <div class="direct-channel-icon">
+                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                </div>
+                <div class="direct-channel-meta">
+                  <div class="direct-channel-top">
+                    <span class="direct-channel-name">Weekday Desk & Pre-Orders</span>
+                    <span class="direct-channel-tag">Direct Chat</span>
+                  </div>
+                  <p class="direct-channel-hint">Connect with our team for weekday bookings & inquiries</p>
                 </div>
                 <div class="direct-channel-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -748,18 +750,18 @@
               </a>
             </div>
 
-            <!-- Direct Hotline Call & Assurance -->
+            <!-- Direct Assurance Pills -->
             <div class="direct-footer-row">
               <div class="direct-phone-call">
-                <span class="phone-label">Prefer to call directly?</span>
+                <span class="phone-label">Weekend Seating Note</span>
                 <div class="phone-links">
-                  <a href="tel:+94757352707" class="phone-link">+94 75 735 2707</a>
+                  <span style="font-weight: 600; color: var(--text-primary);">No Reservations on Weekends · Walk-Ins Only</span>
                 </div>
               </div>
               <div class="direct-assurances">
-                <span class="assurance-pill">⚡ Instant Order</span>
-                <span class="assurance-pill">🍔 100% Halal 🙏🏽</span>
-                <span class="assurance-pill">🪑 Dine In + Takeaway</span>
+                <span class="assurance-pill">☕ Specialty Coffee</span>
+                <span class="assurance-pill">🥐 Fresh Bakery</span>
+                <span class="assurance-pill">🌿 Garden & Indoor</span>
               </div>
             </div>
           </div>
@@ -777,19 +779,19 @@
               <div class="hours-list">
                 <div class="hours-row">
                   <span class="hours-day">Monday – Sunday (Daily)</span>
-                  <span class="hours-time">1:30 PM – 11:00 PM</span>
+                  <span class="hours-time">7:30 AM – 10:00 PM</span>
                 </div>
                 <div class="hours-row">
-                  <span class="hours-day">Dine In & Takeaway</span>
-                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">Open Every Day</span>
+                  <span class="hours-day">Coffee & Bakery Service</span>
+                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">All Day From 7:30 AM</span>
                 </div>
                 <div class="hours-row">
-                  <span class="hours-day">Hot Sizzle Grill</span>
-                  <span class="hours-time">From 1:30 PM Daily</span>
+                  <span class="hours-day">All-Day Brunch & Kitchen</span>
+                  <span class="hours-time">Available All Day</span>
                 </div>
                 <div class="hours-row" style="border: none;">
-                  <span class="hours-day">Shakes & Drinks Bar</span>
-                  <span class="hours-time">All Day Till 11:00 PM</span>
+                  <span class="hours-day">Weekend Reservations</span>
+                  <span class="hours-time" style="color: var(--brand-orange); font-weight: 600;">Walk-Ins Only</span>
                 </div>
               </div>
             </div>
@@ -797,8 +799,8 @@
             <!-- Styled Map Visual -->
             <div class="map-visual-card">
               <img 
-                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" 
-                alt="MELT Restaurant Ambiance" 
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+                alt="KÍRI KÓPI Flower Road Cafe Ambiance" 
                 class="map-bg-image"
               />
               <div class="map-pin-overlay">
@@ -808,28 +810,28 @@
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <div class="map-pin-title">MELT Burgers</div>
-                <div class="map-pin-coords">Waidya Rd, Dehiwala & Colombo 03 📍</div>
+                <div class="map-pin-title">KÍRI KÓPI</div>
+                <div class="map-pin-coords">76/1 Flower Road, Colombo 07 📍</div>
               </div>
             </div>
 
             <!-- Contact & Transit -->
             <div class="visit-card" style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
               <p style="margin-bottom: 6px;">
-                <strong>Locations:</strong> Waidya Rd, Dehiwala-Mount Lavinia & Colombo 03.
+                <strong>Address:</strong> 76/1 Flower Road, Colombo 07, Sri Lanka.
               </p>
               <p style="margin-bottom: 6px;">
-                <strong>Direct Phone:</strong> +94 75 735 2707
+                <strong>Hours:</strong> 7:30 AM – 10:00 PM Daily.
               </p>
               <p style="margin-bottom: 12px;">
                 <strong>Instagram:</strong>
-                <a href="https://www.instagram.com/meltinyour.mouth/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-orange); text-decoration: underline; font-weight: 600;">@meltinyour.mouth</a>
+                <a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-orange); text-decoration: underline; font-weight: 600;">@kirikopi.flowerroad</a>
               </p>
-              <a href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20order%20or%20inquire%20about%20visiting." target="_blank" rel="noopener noreferrer" class="visit-whatsapp-action">
-                <span class="whatsapp-icon-circle">
-                  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              <a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="visit-whatsapp-action">
+                <span class="whatsapp-icon-circle" style="background: var(--brand-yellow); color: var(--text-primary);">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </span>
-                <span>Chat with us on WhatsApp</span>
+                <span>Open in Google Maps</span>
               </a>
             </div>
           </div>
@@ -838,18 +840,18 @@
     </section>
   </main>
 
-  <!-- Section 8: Royal Purple & Yellow Luxury Footer -->
+  <!-- Section 8: Roasted Espresso & Pastel Yellow Luxury Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-row">
         <!-- Brand column -->
         <div class="footer-brand-col">
           <a href="#hero" class="footer-logo">
-            <img src="/melt-logo.jpg" alt="MELT Burgers Logo" class="footer-logo-img" />
-            <span>MELT BURGERS</span>
+            <img src="/kiri-kopi-logo.jpg" alt="KÍRI KÓPI Logo" class="footer-logo-img" />
+            <span>KÍRI KÓPI</span>
           </a>
           <p class="footer-tagline">
-            Your favourite burgers | Subs | Fries ! Handcrafted with love in Dehiwala & Colombo 03. 100% Halal certified.
+            Specialty Coffee Shop & Bakery · All-day breakfast, artisanal brews & handcrafted bakes at 76/1 Flower Road, Colombo 07.
           </p>
         </div>
 
@@ -857,46 +859,46 @@
         <div>
           <div class="footer-col-title">Experience</div>
           <ul class="footer-links-list">
-            <li><a href="#hero" class="footer-link">The Restaurant</a></li>
-            <li><a href="#highlights" class="footer-link">Highlights</a></li>
-            <li><a href="#story" class="footer-link">Our Story & Craft</a></li>
-            <li><a href="#brunch" class="footer-link">Burger O’Clock</a></li>
+            <li><a href="#hero" class="footer-link">The Coffee House</a></li>
+            <li><a href="#highlights" class="footer-link">Story Highlights</a></li>
+            <li><a href="#story" class="footer-link">Our Origins & Craft</a></li>
+            <li><a href="#brunch" class="footer-link">Kópi O’Clock</a></li>
             <li><a href="#menu" class="footer-link">Signature Menu</a></li>
-            <li><a href="#reservations" class="footer-link">Takeaway & Dine In</a></li>
+            <li><a href="#reservations" class="footer-link">Hours & Directions</a></li>
           </ul>
         </div>
 
         <!-- Links: Hours & Contact -->
         <div>
-          <div class="footer-col-title">Locations</div>
+          <div class="footer-col-title">Visit Us</div>
           <ul class="footer-links-list">
-            <li><span class="footer-link">Waidya Rd, Dehiwala</span></li>
-            <li><span class="footer-link">Colombo 03 Branch</span></li>
-            <li><a href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20order." target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--brand-orange); font-weight: 600;">WhatsApp: +94 75 735 2707</a></li>
-            <li><a href="https://www.instagram.com/meltinyour.mouth/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram: @meltinyour.mouth</a></li>
-            <li><span class="footer-link">Mon – Sun | 1:30 PM – 11:00 PM</span></li>
-            <li><span class="footer-link" style="color: var(--brand-orange); font-weight: 600;">100% Halal 🙏🏽</span></li>
+            <li><span class="footer-link">76/1 Flower Road, Col 7</span></li>
+            <li><span class="footer-link">Open Daily: 7:30 AM – 10:00 PM</span></li>
+            <li><a href="https://www.instagram.com/kirikopi.flowerroad/" target="_blank" rel="noopener noreferrer" class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">@kirikopi.flowerroad</a></li>
+            <li><a href="https://www.google.com/maps?q=6.9065372,79.8585982&hl=en-GB&gl=uk&entry=gps&lucs=,94242589,47071704,47069508,47084304&g_st=ic" target="_blank" rel="noopener noreferrer" class="footer-link">Google Maps Location</a></li>
+            <li><span class="footer-link">Weekends: Walk-Ins Only</span></li>
+            <li><span class="footer-link" style="color: var(--brand-yellow); font-weight: 600;">Specialty Coffee & Bakery ☕</span></li>
           </ul>
         </div>
 
         <!-- Newsletter column -->
         <div class="footer-newsletter-col">
-          <div class="footer-col-title">The MELT Club</div>
+          <div class="footer-col-title">The Kíri Kōpi Journal</div>
           <p style="font-size: 13.5px; color: rgba(250, 246, 240, 0.85); line-height: 1.5;">
-            Secret burger drops, cheesy specials, and weekend combo offers sent straight to your inbox.
+            Seasonal brew releases, weekend specials, and bakery drops sent directly to your inbox.
           </p>
           <form class="newsletter-form" id="newsletter-form">
             <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email address for newsletter">
-            <button type="submit" class="newsletter-btn">Join VIP Club</button>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
-          <div class="newsletter-note" id="newsletter-note">Sent with love. No spam, only hot food drops.</div>
+          <div class="newsletter-note" id="newsletter-note">Brewed with love. No spam, only warm coffee notes.</div>
         </div>
       </div>
 
       <!-- Bottom Bar -->
       <div class="footer-bottom-row">
-        <div class="footer-coords">6.8518° N, 79.8660° E · Dehiwala & Colombo 03, Sri Lanka</div>
-        <div>© 2026 MELT Burgers. All Rights Reserved. 100% Halal.</div>
+        <div class="footer-coords">6.9065° N, 79.8586° E · 76/1 Flower Road, Colombo 07, Sri Lanka</div>
+        <div>© 2026 KÍRI KÓPI Flower Road. All Rights Reserved.</div>
         <button class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top">
           <span>Back to Top</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -907,24 +909,26 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Chat Widget -->
+  <!-- Floating Instagram / Direction Action Button -->
   <a 
-    href="https://wa.me/94757352707?text=Hi%20MELT%2C%20I%20would%20like%20to%20order%20takeaway%20or%20inquire%20about%20a%20table." 
+    href="https://www.instagram.com/kirikopi.flowerroad/" 
     target="_blank" 
     rel="noopener noreferrer" 
     class="floating-whatsapp-btn" 
     id="floating-whatsapp-btn"
-    aria-label="Chat with us on WhatsApp"
+    aria-label="Follow Kíri Kópi on Instagram"
   >
-    <span class="whatsapp-icon-circle">
-      <span class="whatsapp-pulse-dot"></span>
-      <svg viewBox="0 0 24 24">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    <span class="whatsapp-icon-circle" style="background: var(--brand-yellow); color: #1A120B;">
+      <span class="whatsapp-pulse-dot" style="background: #1A120B;"></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
       </svg>
     </span>
     <span class="whatsapp-btn-text">
-      <span class="whatsapp-btn-primary">Chat with us</span>
-      <span class="whatsapp-btn-sub">Order & Inquire</span>
+      <span class="whatsapp-btn-primary">@kirikopi.flowerroad</span>
+      <span class="whatsapp-btn-sub">Open 7:30 AM – 10 PM</span>
     </span>
   </a>
 

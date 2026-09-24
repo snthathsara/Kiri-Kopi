@@ -1,8 +1,8 @@
 /* ==========================================================================
-   MELT Burgers — Editorial & Visual System
-   Signature Melt Yellow, Deep Royal Purple & Buttery Cream Palette
-   Exact Swatches: #160624 | #260B3B | #3A1258 | #FFB800 | #C084FC | #FFFDF7
-   Zero harsh fluorescent glare — Gourmet smash burger aesthetic with vintage typography — Warm coffeehouse aesthetic with vintage typography
+   KÍRI KÓPI — Editorial & Visual System
+   Signature Pastel Yellow, Deep Espresso Black-ish Brown & Cream Palette
+   Exact Swatches: #1A120B | #291B10 | #F6E59A | #FAF0B8 | #FFFDF8
+   Zero harsh fluorescent glare — Warm specialty coffeehouse aesthetic with vintage typography
    ========================================================================== */
 
 /* Scroll Offset for Fixed Floating Capsule Navbar */
@@ -30,7 +30,7 @@ section[id],
   left: -10%;
   width: 65%;
   height: 80%;
-  background: radial-gradient(ellipse at 35% 35%, rgba(224, 90, 43, 0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 35% 35%, rgba(246, 229, 154, 0.25) 0%, transparent 70%);
   filter: blur(50px);
   pointer-events: none;
   z-index: 0;
@@ -56,20 +56,20 @@ section[id],
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 15px rgba(35, 18, 11, 0.06);
+  box-shadow: 0 4px 15px rgba(26, 18, 11, 0.06);
   max-width: 100%;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-status-badge.is-closed {
-  border-color: rgba(224, 90, 43, 0.4);
-  background: rgba(224, 90, 43, 0.06);
-  box-shadow: 0 4px 15px rgba(224, 90, 43, 0.1);
+  border-color: rgba(201, 127, 22, 0.4);
+  background: rgba(201, 127, 22, 0.08);
+  box-shadow: 0 4px 15px rgba(201, 127, 22, 0.1);
 }
 
 [data-theme="dark"] .hero-status-badge.is-closed {
-  border-color: rgba(224, 90, 43, 0.45);
-  background: rgba(224, 90, 43, 0.14);
+  border-color: rgba(246, 229, 154, 0.4);
+  background: rgba(246, 229, 154, 0.12);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -80,18 +80,18 @@ section[id],
   background-color: var(--brand-forest);
   display: inline-block;
   flex-shrink: 0;
-  box-shadow: 0 0 8px rgba(53, 27, 15, 0.55);
+  box-shadow: 0 0 8px rgba(26, 18, 11, 0.55);
   animation: pulseDot 2s infinite ease-in-out;
 }
 
 [data-theme="dark"] .status-pulse-dot {
-  background-color: #FFB800;
-  box-shadow: 0 0 10px rgba(224, 90, 43, 0.8);
+  background-color: var(--brand-yellow);
+  box-shadow: 0 0 10px rgba(246, 229, 154, 0.8);
 }
 
 .status-pulse-dot.is-closed {
-  background-color: #FFB800;
-  box-shadow: 0 0 8px rgba(224, 90, 43, 0.8);
+  background-color: var(--brand-orange);
+  box-shadow: 0 0 8px rgba(201, 127, 22, 0.8);
   animation: pulseDotMuted 2.5s infinite ease-in-out;
 }
 
@@ -119,18 +119,18 @@ section[id],
 }
 
 .hero-status-badge.is-closed #cafe-status-label {
-  color: #FFB800;
+  color: var(--brand-orange);
 }
 
 [data-theme="dark"] #cafe-status-label {
-  color: #FFFDF7;
+  color: #FFF8E6;
 }
 
 [data-theme="dark"] .hero-status-badge.is-closed #cafe-status-label {
-  color: #FCD34D;
+  color: var(--brand-yellow);
 }
 
-/* Stacked Title Wrap with Warbler's Cafe Bold Typography */
+/* Stacked Title Wrap with Kiri Kopi Bold Typography */
 .hero-stacked-wrap {
   position: relative;
   display: inline-flex;
@@ -158,10 +158,10 @@ section[id],
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
-/* Dark Mode: Luminous Warm Cream Glow */
+/* Dark Mode: Luminous Warm Pastel Cream Glow */
 [data-theme="dark"] .hero-stacked-title {
-  color: #FFFDF7;
-  text-shadow: 0 0 50px rgba(224, 90, 43, 0.35);
+  color: #FFF8E6;
+  text-shadow: 0 0 50px rgba(246, 229, 154, 0.35);
 }
 
 .hero-stacked-line {
@@ -332,34 +332,34 @@ section[id],
   height: 76px;
   border-radius: 50%;
   padding: 3px;
-  background: linear-gradient(135deg, #3A1258 0%, #FFB800 50%, #260B3B 100%);
+  background: linear-gradient(135deg, #1A120B 0%, #F6E59A 50%, #291B10 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(35, 18, 11, 0.15);
+  box-shadow: 0 4px 14px rgba(26, 18, 11, 0.15);
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .story-highlight-item:hover .story-circle-outer {
-  box-shadow: 0 8px 22px rgba(224, 90, 43, 0.35);
+  box-shadow: 0 8px 22px rgba(246, 229, 154, 0.45);
 }
 
 .story-circle-inner {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #260B3B;
+  background-color: #1A120B;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFDF7;
-  border: 2px solid #160624;
+  color: #F6E59A;
+  border: 2px solid #291B10;
 }
 
 .story-circle-inner svg {
   width: 34px;
   height: 34px;
-  stroke: #FFFDF7;
+  stroke: #F6E59A;
   stroke-width: 1.6;
 }
 
@@ -375,7 +375,7 @@ section[id],
 }
 
 .story-highlight-label .heart-icon {
-  color: #FFB800;
+  color: #C97F16;
 }
 
 /* ==========================================================================
@@ -417,7 +417,7 @@ section[id],
 }
 
 .coffee-word-orange {
-  color: #FFB800 !important;
+  color: var(--brand-yellow) !important;
   display: inline-block;
   font-style: normal;
 }
@@ -471,7 +471,7 @@ section[id],
   font-family: var(--font-sans);
   font-size: clamp(48px, 10vw, 116px);
   font-weight: 900;
-  color: #FFB800;
+  color: var(--brand-yellow);
   letter-spacing: 0.02em;
   margin: 4px 0;
 }
@@ -753,9 +753,9 @@ section[id],
 }
 
 [data-theme="dark"] .vignette-caption {
-  background: #260B3B;
-  color: #FFFDF7;
-  border: 1px solid rgba(217, 195, 174, 0.3);
+  background: #1A120B;
+  color: #FFF8E6;
+  border: 1px solid rgba(246, 229, 154, 0.3);
 }
 
 /* Classical Price List */
@@ -993,8 +993,8 @@ section[id],
   align-items: center;
   gap: 6px;
   padding: 9px 24px;
-  background-color: #FFFDF7;
-  color: #260B3B !important;
+  background-color: var(--brand-yellow);
+  color: #1A120B !important;
   font-size: 13.5px;
   font-weight: 700;
   border-radius: var(--radius-full);
@@ -1003,8 +1003,8 @@ section[id],
 }
 
 .packaging-card-btn:hover {
-  background-color: var(--brand-orange);
-  color: #FFFDF7 !important;
+  background-color: #FFF8E6;
+  color: #1A120B !important;
   transform: scale(1.05);
 }
 
@@ -1171,7 +1171,7 @@ section[id],
 }
 
 .review-stars {
-  color: #FFB800;
+  color: #C97F16;
   display: flex;
   gap: 4px;
   margin-bottom: 10px;
@@ -1179,7 +1179,7 @@ section[id],
 }
 
 [data-theme="dark"] .review-stars {
-  color: #FFB800;
+  color: var(--brand-yellow);
 }
 
 .review-text {

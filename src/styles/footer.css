@@ -110,8 +110,8 @@
 .newsletter-btn {
   padding: 10px 20px;
   border-radius: var(--radius-full);
-  background: var(--brand-orange);
-  color: #160624;
+  background: var(--brand-yellow);
+  color: #1A120B;
   font-size: 13.5px;
   font-weight: 700;
   transition: all 0.2s ease;

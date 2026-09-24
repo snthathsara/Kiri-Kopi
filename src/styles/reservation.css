@@ -71,8 +71,8 @@
 }
 
 [data-theme="dark"] .reservation-direct-card {
-  background: #1C0A2E;
-  border-color: rgba(255, 184, 0, 0.35);
+  background: var(--bg-surface-card);
+  border-color: var(--border-dark);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -92,15 +92,15 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--brand-forest);
-  background: rgba(58, 18, 88, 0.08);
+  background: var(--bg-pill);
   padding: 5px 14px;
   border-radius: var(--radius-full);
   width: fit-content;
 }
 
 [data-theme="dark"] .direct-badge {
-  color: var(--brand-orange);
-  background: rgba(255, 184, 0, 0.2);
+  color: var(--brand-yellow);
+  background: rgba(246, 229, 154, 0.2);
 }
 
 .direct-badge-dot {
@@ -108,13 +108,13 @@
   height: 8px;
   border-radius: 50%;
   background-color: var(--brand-forest);
-  box-shadow: 0 0 8px rgba(45, 15, 68, 0.55);
+  box-shadow: 0 0 8px rgba(26, 18, 11, 0.55);
   animation: pulseDot 2s infinite;
 }
 
 [data-theme="dark"] .direct-badge-dot {
-  background-color: #FFB800;
-  box-shadow: 0 0 8px rgba(255, 184, 0, 0.8);
+  background-color: var(--brand-yellow);
+  box-shadow: 0 0 8px rgba(246, 229, 154, 0.8);
 }
 
 .direct-booking-title {
@@ -359,8 +359,8 @@
 }
 
 [data-theme="dark"] .visit-card {
-  background: #1C0A2E;
-  border-color: rgba(255, 184, 0, 0.35);
+  background: var(--bg-surface-card);
+  border-color: var(--border-dark);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 

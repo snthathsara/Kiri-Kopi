@@ -1,222 +1,222 @@
 export const MENU_ITEMS = [
-  // --- 1. MAINS: BURGERS & SUBS (4 Items) ---
+  // --- 1. MAINS: LUNCH, DINNER & ALL-DAY BRUNCH (4 Items) ---
   {
-    id: 'melt-double-beef-burger',
-    name: 'Melt Signature Double Beef Burger',
+    id: 'kk-diner-waffle',
+    name: 'KK Diner Waffle',
     category: 'mains',
-    categoryLabel: 'Mains · Gourmet Burgers & Subs',
-    price: 'Rs. 2,720',
-    description: 'Two smashed beef patties grilled to juicy perfection with double molten cheddar cheese, caramelized onions, crisp lettuce, and signature Melt secret sauce on a toasted sesame brioche bun. Served with fries.',
-    notes: 'Double smash patty, melted cheddar drip, house secret sauce.',
-    dietary: ['House Signature', '100% Halal', 'Served with Fries'],
-    pairing: 'Loaded Lotus Biscoff Thick Shake',
-    image: '/melt-burger.jpg',
-    prepTime: 'Smashed Fresh to Order'
+    categoryLabel: 'Mains · Brunch & Signatures',
+    price: 'Rs. 2,850',
+    description: 'Crispy rice and cassava waffle served with hot whipped chili honey, Nashville-dipped fried chicken breast, roasted garlic aioli, and house-pickled burger cucumbers.',
+    notes: 'Rice & cassava waffle crunch, fiery Nashville fried chicken, hot whipped honey.',
+    dietary: ['House Signature', 'Crispy & Spicy', 'Brunch Favorite'],
+    pairing: 'Iced Tin Kiri Kōpi',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Waffle Pressed Fresh'
   },
   {
-    id: 'melt-crispy-chicken-burger',
-    name: 'Melt Crispy Buttermilk Chicken Burger',
+    id: 'kk-smashed-beef-burger',
+    name: 'Smashed Beef Burger',
     category: 'mains',
-    categoryLabel: 'Mains · Gourmet Burgers & Subs',
-    price: 'Rs. 1,840',
-    description: 'Crispy golden fried buttermilk chicken breast dunked in hot spicy glaze, topped with crunchy shredded slaw, melted cheese, and tangy pickles on a butter-toasted brioche bun. Served with fries.',
-    notes: 'Ultra-crunchy buttermilk crust, house spice dunk, tangy pickles.',
-    dietary: ['Bestseller', '100% Halal', 'Served with Fries'],
-    pairing: 'Melt Signature Iced Spanish Latte',
-    image: 'https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Fried Crispy to Order'
+    categoryLabel: 'Mains · Brunch & Signatures',
+    price: 'Rs. 2,900',
+    description: 'Homemade smashed prime beef patty seared on the flat-top with sweet caramelized onions, melted cheddar, crisp gherkins, and secret burger sauce in a house milk bun. Served with fries.',
+    notes: 'Double smash patty, melted cheese drip, sweet onion jam, toasted milk bun.',
+    dietary: ['Chef’s Bestseller', '100% Beef', 'Served with Fries'],
+    pairing: 'Orange Cold Brew',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Smashed Hot to Order'
   },
   {
-    id: 'melt-carnival-burger',
-    name: 'Melt Carnival Monster Burger',
+    id: 'kk-chilli-eggs',
+    name: 'KK Chilli Eggs',
     category: 'mains',
-    categoryLabel: 'Mains · Gourmet Burgers & Subs',
-    price: 'Rs. 2,720',
-    description: 'The ultimate hunger crusher: stacked beef patty and crispy chicken fillet layered with overflowing melted cheese, beef bacon strips, golden onion rings, and smoky BBQ aioli. Served with fries.',
-    notes: 'Stacked beef & crispy chicken combo, molten cheese volcano.',
-    dietary: ['Epic Feast', 'Cheese Overload', 'Served with Fries'],
-    pairing: 'Belgian Chocolate Velvet Shake',
-    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Monster Stack Made Fresh'
+    categoryLabel: 'Mains · Brunch & Signatures',
+    price: 'Rs. 2,650',
+    description: 'Two poached farm eggs served over rich homemade chili oil, cooling herbed tzatziki yogurt, and spiced beef merguez sausages on wood-fired crusty ciabatta.',
+    notes: 'Silky poached eggs, aromatic house chilli oil, savory beef merguez.',
+    dietary: ['All-Day Breakfast', 'Spicy & Creamy', 'Wood-Fired Ciabatta'],
+    pairing: 'KK Cold Foam - Sicilian Pistachio',
+    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Poached to Order'
   },
   {
-    id: 'melt-crispy-chicken-sub',
-    name: 'Signature Crispy Chicken Submarine',
+    id: 'kk-jaggery-beef-croissant',
+    name: 'Jaggery Beef Croissant',
     category: 'mains',
-    categoryLabel: 'Mains · Gourmet Burgers & Subs',
+    categoryLabel: 'Mains · Brunch & Signatures',
+    price: 'Rs. 2,950',
+    description: 'Slow-cooked pulled jaggery-glazed beef, caramelized onion jam, and crunchy red cabbage salad folded inside a warm French butter croissant, served with homemade raita.',
+    notes: 'Slow-cooked jaggery pulled beef, butter croissant, cooling cucumber raita.',
+    dietary: ['Bakery Specialty', 'Sri Lankan Fusion', 'Flaky Pastry'],
+    pairing: 'Tiramisu Latte',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Freshly Baked & Filled'
+  },
+
+  // --- 2. SNACKS & SANDOS: ARTISAN PLATES (3 Items) ---
+  {
+    id: 'kk-grilled-cheese',
+    name: 'Grilled Cheese in Shokupan [V]',
+    category: 'snacks',
+    categoryLabel: 'Snacks & Sandos · Light Plates',
     price: 'Rs. 2,250',
-    description: 'Toasted footlong artisan sub roll stuffed generously with tender crispy chicken tenders, melted mozzarella & sharp cheddar blend, caramelized bell peppers, and garlic herb drizzle. Served with fries.',
-    notes: 'Crispy chicken tenders, melted cheese crust, soft toasted roll.',
-    dietary: ['Sub Favorite', '100% Halal', 'Served with Fries'],
-    pairing: 'Passionfruit Mojito Cooler',
-    image: 'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Baked & Toasted to Order'
+    description: 'Whipped hot chili honey, smoked cheese, local aged gouda, and gooey mozzarella griddled golden in thick Japanese shokupan milk bread.',
+    notes: 'Four-cheese molten pull, whipped spicy honey drizzle, pillowy milk bread.',
+    dietary: ['Vegetarian', 'Gourmet Cheese Pull', 'Shokupan Bread'],
+    pairing: 'Iced Tin Kiri Kōpi',
+    image: 'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Griddled Golden Brown'
+  },
+  {
+    id: 'kk-smoked-salmon-sando',
+    name: 'Smoked Salmon Sando',
+    category: 'snacks',
+    categoryLabel: 'Snacks & Sandos · Light Plates',
+    price: 'Rs. 2,750',
+    description: 'Artisan house focaccia layered with delicate Norwegian smoked salmon, whipped caper cream cheese, shaved red onion, and fresh garden dill.',
+    notes: 'Freshly baked herb focaccia, premium cold-smoked salmon, zesty capers.',
+    dietary: ['Pescatarian', 'House Focaccia', 'Fresh & Delicate'],
+    pairing: 'Frozen Naarang Lemonade',
+    image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Assembled Fresh'
+  },
+  {
+    id: 'kk-breakfast-tacos',
+    name: 'Breakfast Tacos [VO]',
+    category: 'snacks',
+    categoryLabel: 'Snacks & Sandos · Light Plates',
+    price: 'Rs. 2,350',
+    description: 'Soft corn tortillas loaded with creamy scrambled eggs, crumbled Greek feta, fresh guacamole, zesty pico de gallo, fresh coriander, and house sour yogurt drizzle.',
+    notes: 'Fluffy scrambled eggs, fresh guacamole, tangy tomato salsa.',
+    dietary: ['Vegetarian Option', 'Fresh & Vibrant', 'Light Bite'],
+    pairing: 'Kyoto Strawberry Matcha Latté',
+    image: 'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Warmed Tortillas & Fresh Salsa'
   },
 
-  // --- 2. SNACKS: LOADED FRIES & SIDES (3 Items) ---
+  // --- 3. SPECIALTY COFFEE & COLD ESPRESSO (4 Items) ---
   {
-    id: 'melt-slutty-loaded-fries',
-    name: 'Slutty Crispy Chicken Loaded Fries',
-    category: 'snacks',
-    categoryLabel: 'Snacks · Loaded Fries & Sides',
-    price: 'Rs. 2,800',
-    description: 'A monster basket of piping-hot skin-on french fries drenched in hot liquid cheddar cheese, crispy spiced chicken bites, pickled jalapeños, crispy bacon bits, and house Melt drizzle.',
-    notes: 'Molten cheese waterfall, crispy chicken cubes, jalapeño heat.',
-    dietary: ['Crowd Pleaser', 'Cheese Drenched', 'Shareable'],
-    pairing: 'Salted Caramel Melt Latte',
-    image: '/melt-loaded-fries.jpg',
-    prepTime: 'Loaded to Order'
-  },
-  {
-    id: 'melt-glazed-chicken-wings',
-    name: 'Glazed Chicken Wings (Mango BBQ & Kochchi)',
-    category: 'snacks',
-    categoryLabel: 'Snacks · Loaded Fries & Sides',
-    price: 'Rs. 1,650',
-    description: 'Crispy jumbo chicken wings tossed in our sweet mango BBQ glaze or signature fiery Sri Lankan kochchi chili pepper sauce, topped with toasted sesame seeds and chopped scallions.',
-    notes: 'Choice of Sweet Mango BBQ or Fiery Lankan Kochchi glaze.',
-    dietary: ['Spicy Lankan Kick', '100% Halal'],
-    pairing: 'Passionfruit Mojito Cooler',
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Crispy Fried & Hand Tossed'
-  },
-  {
-    id: 'melt-cajun-seasoned-fries',
-    name: 'Melt Cajun Seasoned Fries & Warm Dip',
-    category: 'snacks',
-    categoryLabel: 'Snacks · Loaded Fries & Sides',
-    price: 'Rs. 750',
-    description: 'Golden crisped potato fries tossed generously in our house Cajun spice blend, served piping hot with a cup of warm creamy cheddar cheese dipping sauce.',
-    notes: 'Smoky paprika & herb seasoning, velvety melted cheese dip.',
-    dietary: ['Crispy Classic', 'Vegetarian Friendly'],
-    pairing: 'Artisan Double Flat White',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Cooked Hot to Order'
-  },
-
-  // --- 3. COFFEE & HOT DRINKS (4 Items) ---
-  {
-    id: 'melt-iced-spanish-latte',
-    name: 'Melt Signature Iced Spanish Latte',
+    id: 'kk-iced-tin-kopi',
+    name: 'Iced Tin Kiri Kōpi',
     category: 'sips',
-    categoryLabel: 'Coffee & Drinks · Handcrafted Sips',
-    price: 'Rs. 850',
-    description: 'Double ristretto espresso pulled over creamy condensed milk and chilled whole milk, crowned with silky microfoam and caramel dust.',
-    notes: 'Velvety sweetness, rich roasted espresso body, iced refresh.',
-    dietary: ['Specialty Coffee', 'Crowd Favorite'],
-    pairing: 'Melt Signature Double Beef Burger',
+    categoryLabel: 'Specialty Coffee · Handcrafted Brews',
+    price: 'Rs. 1,180',
+    description: 'The defining Kiri Kōpi signature: double specialty espresso pulled over sweet condensed milk and chilled whole milk, served over crystal ice in our vintage tin cup.',
+    notes: 'Sri Lankan milk coffee reimagined with specialty beans and nostalgic charm.',
+    dietary: ['Iconic Signature', 'Nostalgic Favorite', 'Specialty Beans'],
+    pairing: 'KK Diner Waffle',
     image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Barista Handcrafted'
+    prepTime: 'Pulled & Shaken Fresh'
   },
   {
-    id: 'melt-salted-caramel-latte',
-    name: 'Salted Caramel Melt Latte',
+    id: 'kk-tiramisu-latte',
+    name: 'Tiramisu Latte (Hot or Cold)',
     category: 'sips',
-    categoryLabel: 'Coffee & Drinks · Handcrafted Sips',
-    price: 'Rs. 890',
-    description: 'Specialty double espresso poured over cold milk, buttery slow-cooked sea-salt caramel ribbons, and finished with a cold cream foam crown.',
-    notes: 'Buttery salted caramel swirl, bold espresso punch, velvety foam.',
-    dietary: ['Sweet & Bold', 'Indulgent'],
-    pairing: 'Slutty Crispy Chicken Loaded Fries',
+    categoryLabel: 'Specialty Coffee · Handcrafted Brews',
+    price: 'Rs. 1,280',
+    description: 'Bold espresso poured over chilled whole milk, topped with a velvety crown of mascarpone sweet cream foam, dark Dutch cocoa dusting, and ladyfinger biscuit aroma.',
+    notes: 'Mascarpone whipped foam, rich double espresso, Dutch cocoa finish.',
+    dietary: ['Dessert Coffee', 'Velvety Foam Crown', 'Sweet & Intense'],
+    pairing: 'Jaggery Beef Croissant',
+    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Artisan Layered'
+  },
+  {
+    id: 'kk-cold-foam-pistachio',
+    name: 'KK Cold Foam - Sicilian Pistachio',
+    category: 'sips',
+    categoryLabel: 'Specialty Coffee · Handcrafted Brews',
+    price: 'Rs. 1,450',
+    description: 'Double shot of rich espresso on iced milk, topped with an airy cold foam whipped with pure Sicilian pistachio paste and crushed toasted nut crumbles.',
+    notes: 'Nutty Mediterranean pistachio aroma, dense sweet cold foam, bold roast.',
+    dietary: ['House Innovation', 'Cold Foam Special', 'Nutty Perfection'],
+    pairing: 'KK Chilli Eggs',
     image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Handcrafted Espresso'
+    prepTime: 'Whipped Cold Foam Layer'
   },
   {
-    id: 'melt-flat-white',
-    name: 'Artisan Double Flat White',
+    id: 'kk-orange-cold-brew',
+    name: 'Orange Cold Brew',
     category: 'sips',
-    categoryLabel: 'Coffee & Drinks · Handcrafted Sips',
-    price: 'Rs. 720',
-    description: 'Precision double espresso pulled from rich roasted beans, harmonized 1:1 with velvety textured steamed microfoam and free-pour latte art.',
-    notes: 'Roasted nutty aroma, dark chocolate undertones, silky texture.',
-    dietary: ['Single Origin Beans', 'Dairy-Free Available'],
-    pairing: 'Signature Crispy Chicken Submarine',
-    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Steamed Microfoam Perfection'
-  },
-  {
-    id: 'melt-cold-brew-tonic',
-    name: 'Single-Origin Cold Brew & Citrus Tonic',
-    category: 'sips',
-    categoryLabel: 'Coffee & Drinks · Handcrafted Sips',
-    price: 'Rs. 780',
-    description: '18-hour slow steeped single-origin cold brew coffee poured over crystal clear ice with sparkling citrus tonic and crushed mint leaves.',
-    notes: 'Sparkling effervescence, bright citrus peel, clean coffee notes.',
-    dietary: ['Sugar-Free', 'Ultra Refreshing'],
-    pairing: 'Melt Crispy Buttermilk Chicken Burger',
+    categoryLabel: 'Specialty Coffee · Handcrafted Brews',
+    price: 'Rs. 1,180',
+    description: '18-hour single origin cold brew coffee steeped low and slow, poured over crystalline ice with freshly pressed Valencia orange juice and fragrant citrus oils.',
+    notes: 'Clean slow-steeped chocolate notes, bright sweet orange zest, effervescent.',
+    dietary: ['18-Hour Steep', 'Citrus Infused', 'Sugar-Free Available'],
+    pairing: 'Smashed Beef Burger',
     image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
-    prepTime: '18-Hour Slow Steep'
+    prepTime: '18-Hour Cold Extraction'
   },
 
-  // --- 4. BEVERAGES & SHAKES (3 Items) ---
+  // --- 4. BAKERY, MATCHA & BEVERAGES (3 Items) ---
   {
-    id: 'melt-lotus-biscoff-shake',
-    name: 'Loaded Lotus Biscoff Thick Shake',
+    id: 'kk-french-toast',
+    name: 'KK French Toast',
     category: 'refreshers',
-    categoryLabel: 'Beverages · Thick Shakes & Coolers',
-    price: 'Rs. 1,250',
-    description: 'Ultra-creamy hand-churned milkshake crafted with rich vanilla ice cream, Belgian Lotus Biscoff speculoos spread, crushed caramelized biscuits, and whipped cream.',
-    notes: 'Belgian speculoos richness, cookie crunch topping, thick straw texture.',
-    dietary: ['House Specialty', 'Must Try Shake'],
-    pairing: 'Melt Signature Double Beef Burger',
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Hand-Spun Fresh'
+    categoryLabel: 'Bakery, Matcha & Refreshers',
+    price: 'Rs. 2,650',
+    description: 'House-baked golden brioche soaked in cinnamon vanilla egg custard, topped with whipped cream cheese, wild blueberry compote, and warm maple berry drizzle.',
+    notes: 'Bakery brioche pillow, whipped mascarpone cream cheese, tart berry compote.',
+    dietary: ['Bakery Signature', 'Sweet Indulgence', 'All-Day Breakfast'],
+    pairing: 'Iced Tin Kiri Kōpi',
+    image: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Griddled Fresh from Bakery'
   },
   {
-    id: 'melt-chocolate-velvet-shake',
-    name: 'Belgian Chocolate Velvet Shake',
+    id: 'kk-strawberry-matcha',
+    name: 'Kyoto Strawberry Matcha Latté',
     category: 'refreshers',
-    categoryLabel: 'Beverages · Thick Shakes & Coolers',
-    price: 'Rs. 1,150',
-    description: 'Dense dark chocolate shake blended with premium Dutch cocoa ice cream, molten chocolate fudge swirl, and topped with shaved chocolate curls.',
-    notes: '70% dark chocolate depth, fudge swirl, dense whipped cream.',
-    dietary: ['Chocoholic Dream', 'Vegetarian'],
-    pairing: 'Melt Carnival Monster Burger',
-    image: 'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Spun to Order'
+    categoryLabel: 'Bakery, Matcha & Refreshers',
+    price: 'Rs. 1,480',
+    description: 'Ceremonial Grade green tea from Kyoto, Japan, hand-whisked to order and gently layered over sweet homemade strawberry compote and silky chilled milk.',
+    notes: 'Kyoto ceremonial green tea, layered strawberry compote, vivid two-tone.',
+    dietary: ['Ceremonial Grade Kyoto', 'Antioxidant Rich', 'Japanese Matcha'],
+    pairing: 'Breakfast Tacos',
+    image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Bamboo Whisked Fresh'
   },
   {
-    id: 'melt-passionfruit-mojito',
-    name: 'Passionfruit Mojito Cooler',
+    id: 'kk-frozen-naarang-lemonade',
+    name: 'Frozen Naarang Lemonade',
     category: 'refreshers',
-    categoryLabel: 'Beverages · Thick Shakes & Coolers',
-    price: 'Rs. 750',
-    description: 'Fresh passionfruit pulp muddled with garden mint leaves, freshly squeezed key lime, and sparkling soda over crushed ice.',
-    notes: 'Zesty tropical passionfruit, cooling mint, sparkling carbonation.',
-    dietary: ['100% Fresh', 'Vegan', 'Thirst Quencher'],
-    pairing: 'Glazed Chicken Wings',
+    categoryLabel: 'Bakery, Matcha & Refreshers',
+    price: 'Rs. 980',
+    description: 'Indigenous Sri Lankan naarang citrus cold-pressed and blended into a glacial slush with garden mint leaves, key lime zest, and raw cane sugar.',
+    notes: 'Lankan naarang citrus, refreshing icy slush, fragrant mint oil.',
+    dietary: ['100% Island Fruit', 'Vegan Slush', 'Cooling Refreshment'],
+    pairing: 'Smoked Salmon Sando',
     image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Muddled Fresh'
+    prepTime: 'Crushed Glacial Slush'
   }
 ];
 
 export const GALLERY_ITEMS = [
   {
-    id: 'gallery-burgers-subs',
-    title: 'Burgers That Melt in Your Mouth',
-    subtitle: 'Double smashed beef patties, buttermilk chicken & loaded footlong subs',
-    category: 'Burgers & Subs 🍔',
-    image: '/melt-burger.jpg'
-  },
-  {
-    id: 'gallery-loaded-fries',
-    title: 'Slutty Loaded Cheesy Fries',
-    subtitle: 'Golden crisp fries drowned in molten cheddar sauce & spiced chicken',
-    category: 'Loaded Fries 🍟',
-    image: '/melt-loaded-fries.jpg'
-  },
-  {
-    id: 'gallery-coffee-sips',
-    title: 'Specialty Espresso & Cold Brew',
-    subtitle: 'Artisan Iced Spanish lattes, caramel brews & flat whites',
+    id: 'gallery-coffee',
+    title: 'Specialty Coffee & Iced Tin Kiri Kōpi',
+    subtitle: 'From Kyoto ceremonial matcha to our iconic Iced Tin Kiri Kōpi in Colombo 07',
     category: 'Specialty Coffee ☕',
     image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80'
   },
   {
-    id: 'gallery-thick-shakes',
-    title: 'Hand-Spun Thick Shakes & Coolers',
-    subtitle: 'Loaded Lotus Biscoff, Belgian dark chocolate & fizzy passionfruit mojitos',
-    category: 'Shakes & Sips 🥤',
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80'
+    id: 'gallery-brunch',
+    title: 'All-Day Brunch & KK Diner Waffle',
+    subtitle: 'Rice & cassava waffles, poached chilli eggs, and brioche french toasts',
+    category: 'Brunch & Waffles 🥐',
+    image: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'gallery-bakery',
+    title: 'Artisan Bakery & Flaky Croissants',
+    subtitle: 'Freshly baked morning croissants, jaggery beef bakes and shokupan sandos',
+    category: 'Bakery & Sandos 🥪',
+    image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'gallery-matcha-sips',
+    title: 'Ceremonial Matcha & Island Coolers',
+    subtitle: 'Kyoto strawberry matcha, homemade sodas & frozen naarang lemonades',
+    category: 'Matcha & Sips 🍵',
+    image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80'
   }
 ];
