@@ -4,7 +4,6 @@ export function initNavbar() {
   const track = document.getElementById('nav-links-track');
   const blob = document.getElementById('nav-active-blob');
   const links = Array.from(document.querySelectorAll('.nav-link'));
-  const sections = Array.from(document.querySelectorAll('section[id], div[id]'));
   const ctaBtn = document.querySelector('.nav-cta-btn');
   
   if (!track || !blob || links.length === 0) return;
@@ -112,19 +111,18 @@ export function initNavbar() {
     }
   });
 
-  // Mapping from all page section IDs to the appropriate nav link selector
-  const sectionToLinkMap = {
-    'hero': '#hero',
-    'highlights': '#highlights',
-    'story': '#story',
-    'brunch': '#story',
-    'menu': '#menu',
-    'order': '#menu',
-    'specialties': '#menu',
-    'about': '#about',
-    'reservations': '#reservations',
-    'visit': '#reservations'
-  };
+  // Tracked main top-level sections mapped to navbar links
+  const trackedNavSections = [
+    { id: 'hero', href: '#hero' },
+    { id: 'highlights', href: '#highlights' },
+    { id: 'story', href: '#story' },
+    { id: 'brunch', href: '#story' },
+    { id: 'menu', href: '#menu' },
+    { id: 'order', href: '#menu' },
+    { id: 'specialties', href: '#menu' },
+    { id: 'about', href: '#about' },
+    { id: 'reservations', href: '#reservations' }
+  ];
 
   // Real-time ScrollSpy
   let scrollTimeout;
@@ -134,21 +132,11 @@ export function initNavbar() {
       scrollTimeout = null;
       if (isHovering || isManualScroll) return;
 
-      const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 70);
-      const scrollPosition = window.scrollY + 200;
+      const scrollY = window.scrollY;
+      const isAtBottom = (window.innerHeight + scrollY) >= (document.documentElement.scrollHeight - 60);
 
-      let currentSectionId = '';
-      for (const section of sections) {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        if (scrollPosition >= top && scrollPosition < top + height) {
-          currentSectionId = section.getAttribute('id');
-          break;
-        }
-      }
-
-      // If at bottom or in reservations / visit section, activate Visit link
-      if (isAtBottom || currentSectionId === 'reservations' || currentSectionId === 'visit') {
+      // If at bottom, activate Visit link
+      if (isAtBottom) {
         const visitLink = links.find(l => l.getAttribute('href') === '#reservations');
         if (visitLink && visitLink !== activeLink) {
           setActiveLink(visitLink, true);
@@ -157,15 +145,50 @@ export function initNavbar() {
         }
         if (ctaBtn) ctaBtn.classList.add('is-active');
         return;
-      } else {
-        if (ctaBtn) ctaBtn.classList.remove('is-active');
       }
 
-      if (currentSectionId && sectionToLinkMap[currentSectionId]) {
-        const targetHref = sectionToLinkMap[currentSectionId];
-        const matchingLink = links.find(l => l.getAttribute('href') === targetHref);
+      // If at the very top (first 120px), activate Home
+      if (scrollY < 120) {
+        const homeLink = links.find(l => l.getAttribute('href') === '#hero');
+        if (homeLink && homeLink !== activeLink) {
+          setActiveLink(homeLink, true);
+        } else if (!isHovering) {
+          setBlobTarget(homeLink || activeLink);
+        }
+        if (ctaBtn) ctaBtn.classList.remove('is-active');
+        return;
+      }
+
+      // Calculate true document-level coordinates using getBoundingClientRect()
+      const scrollFocus = scrollY + 200;
+      let matchedHref = '';
+
+      for (const item of trackedNavSections) {
+        const el = document.getElementById(item.id);
+        if (!el) continue;
+        const rect = el.getBoundingClientRect();
+        const top = rect.top + scrollY;
+        const height = el.offsetHeight;
+        if (scrollFocus >= top && scrollFocus < top + height) {
+          matchedHref = item.href;
+          break;
+        }
+      }
+
+      if (matchedHref) {
+        const matchingLink = links.find(l => l.getAttribute('href') === matchedHref);
         if (matchingLink && matchingLink !== activeLink) {
           setActiveLink(matchingLink, true);
+        } else if (!isHovering) {
+          setBlobTarget(matchingLink || activeLink);
+        }
+
+        if (ctaBtn) {
+          if (matchedHref === '#reservations') {
+            ctaBtn.classList.add('is-active');
+          } else {
+            ctaBtn.classList.remove('is-active');
+          }
         }
       }
     }, 40);

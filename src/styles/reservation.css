@@ -13,7 +13,7 @@
 }
 
 [data-theme="dark"] .reservation-section {
-  background-color: #12051D;
+  background-color: var(--bg-surface-subtle);
   border-top-color: var(--border-color);
   border-bottom-color: var(--border-color);
 }
@@ -63,10 +63,10 @@
   flex-direction: column;
   gap: 26px;
   background: var(--bg-surface);
-  border: 1px solid rgba(58, 18, 88, 0.16);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
   padding: 36px 32px;
-  box-shadow: 0 16px 40px rgba(35, 12, 56, 0.1);
+  box-shadow: 0 16px 40px rgba(26, 18, 11, 0.08);
   transition: var(--theme-transition);
 }
 
@@ -144,8 +144,8 @@
   gap: 18px;
   padding: 18px 20px;
   border-radius: 16px;
-  border: 1px solid rgba(58, 18, 88, 0.14);
-  background: #FFFDF7;
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
@@ -153,13 +153,13 @@
 }
 
 [data-theme="dark"] .direct-channel-btn {
-  background: #250E3D;
-  border-color: rgba(255, 255, 255, 0.08);
+  background: var(--bg-surface);
+  border-color: var(--border-subtle);
 }
 
 .direct-channel-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(35, 12, 56, 0.12);
+  box-shadow: 0 10px 24px rgba(26, 18, 11, 0.12);
   border-color: var(--brand-orange);
 }
 
@@ -183,26 +183,33 @@
   transform: scale(1.08) rotate(-3deg);
 }
 
-/* Specific Channel Accents — All match Maps Icon Background Color (#351B0F) */
+/* Specific Channel Accents — Warm Pastel Yellow & Roasted Coffee */
 .direct-channel-btn.is-whatsapp,
 .direct-channel-btn.is-instagram,
 .direct-channel-btn.is-maps {
-  background: linear-gradient(135deg, rgba(255, 184, 0, 0.08) 0%, #FFFDF7 65%);
-  border-color: rgba(58, 18, 88, 0.15);
+  background: linear-gradient(135deg, rgba(246, 229, 154, 0.18) 0%, #FFFDF7 65%);
+  border-color: var(--border-color);
 }
 
 [data-theme="dark"] .direct-channel-btn.is-whatsapp,
 [data-theme="dark"] .direct-channel-btn.is-instagram,
 [data-theme="dark"] .direct-channel-btn.is-maps {
-  background: linear-gradient(135deg, rgba(255, 184, 0, 0.15) 0%, #250E3D 65%);
-  border-color: rgba(255, 184, 0, 0.3);
+  background: linear-gradient(135deg, rgba(246, 229, 154, 0.08) 0%, #1A1009 65%);
+  border-color: var(--border-subtle);
 }
 
 .direct-channel-btn.is-whatsapp:hover,
 .direct-channel-btn.is-instagram:hover,
 .direct-channel-btn.is-maps:hover {
   border-color: var(--brand-orange);
-  background: linear-gradient(135deg, rgba(255, 184, 0, 0.2) 0%, #FFFDF7 65%);
+  background: linear-gradient(135deg, rgba(246, 229, 154, 0.28) 0%, #FFFDF7 65%);
+}
+
+[data-theme="dark"] .direct-channel-btn.is-whatsapp:hover,
+[data-theme="dark"] .direct-channel-btn.is-instagram:hover,
+[data-theme="dark"] .direct-channel-btn.is-maps:hover {
+  border-color: var(--brand-yellow);
+  background: linear-gradient(135deg, rgba(246, 229, 154, 0.16) 0%, #24170D 65%);
 }
 
 .direct-channel-btn.is-whatsapp .direct-channel-icon,
@@ -210,7 +217,7 @@
 .direct-channel-btn.is-maps .direct-channel-icon {
   background: var(--brand-forest);
   color: #FFFDF7;
-  box-shadow: 0 6px 16px rgba(45, 15, 68, 0.35);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .direct-channel-btn.is-whatsapp .direct-channel-icon svg {
@@ -351,7 +358,7 @@
 
 .visit-card {
   background: var(--bg-surface);
-  border: 1px solid rgba(58, 18, 88, 0.16);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius-card);
   padding: 26px;
   box-shadow: 0 10px 28px rgba(35, 18, 11, 0.08);
