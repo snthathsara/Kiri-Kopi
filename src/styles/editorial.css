@@ -877,6 +877,8 @@ section[id],
 }
 
 .stacked-order-title {
+  position: relative;
+  z-index: 2;
   font-family: var(--font-display);
   font-size: clamp(34px, 7vw, 86px);
   font-weight: 900;
@@ -905,10 +907,11 @@ section[id],
 
 .order-pedestal-cake {
   position: absolute;
-  top: 10px;
-  right: -70px;
+  top: -25px;
+  right: -65px;
+  z-index: 1;
   transform: rotate(6deg);
-  width: clamp(80px, 11vw, 130px);
+  width: clamp(60px, 8vw, 92px);
   filter: drop-shadow(0 15px 25px rgba(35, 18, 11, 0.35));
   animation: floatCup 4s ease-in-out infinite;
   pointer-events: none;
@@ -1293,9 +1296,9 @@ section[id],
   }
 
   .order-pedestal-cake {
-    top: 5px;
-    right: -45px;
-    width: clamp(65px, 9vw, 95px);
+    top: -20px;
+    right: -42px;
+    width: clamp(50px, 7.5vw, 75px);
   }
 }
 
@@ -1323,9 +1326,9 @@ section[id],
   }
 
   .order-pedestal-cake {
-    top: 0px;
-    right: -15px;
-    width: 55px;
+    top: -16px;
+    right: -10px;
+    width: 44px;
     opacity: 0.9;
   }
 
