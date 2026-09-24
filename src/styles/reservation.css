@@ -12,6 +12,41 @@
   transition: var(--theme-transition);
 }
 
+[data-theme="dark"] .reservation-section {
+  background-color: #120803;
+  border-top-color: var(--border-color);
+  border-bottom-color: var(--border-color);
+}
+
+.reservation-section .section-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.8vw, 42px);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+[data-theme="dark"] .reservation-section .section-title {
+  color: #FAF6F0;
+}
+
+.reservation-section .section-title em {
+  font-style: italic;
+  color: var(--brand-orange);
+}
+
+.reservation-section .section-subtitle {
+  color: var(--text-secondary);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .reservation-section .section-subtitle {
+  color: var(--text-secondary);
+}
+
 .reservation-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;

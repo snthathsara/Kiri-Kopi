@@ -104,16 +104,8 @@ export function initNavbar() {
       scrollTimeout = null;
       if (isHovering || isManualScroll) return;
 
-      // Check if user is at the bottom of the page
+      // Check if user is at the bottom of the page or in reservations section
       const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 70);
-      if (isAtBottom && links.length > 0) {
-        const lastLink = links[links.length - 1];
-        if (lastLink && lastLink !== activeLink) {
-          setActiveLink(lastLink, true);
-        }
-        return;
-      }
-
       const scrollPosition = window.scrollY + 200;
 
       let currentSectionId = '';
@@ -124,6 +116,12 @@ export function initNavbar() {
           currentSectionId = section.getAttribute('id');
           break;
         }
+      }
+
+      if (currentSectionId === 'reservations' || isAtBottom) {
+        links.forEach(l => l.classList.remove('is-active', 'has-blob'));
+        blob.style.opacity = '0';
+        return;
       }
 
       if (currentSectionId) {

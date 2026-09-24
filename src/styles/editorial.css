@@ -892,12 +892,23 @@ section[id],
   color: #FAF6F0;
 }
 
+.section-label {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-orange);
+  margin-bottom: 8px;
+}
+
 .order-pedestal-cake {
   position: absolute;
   top: 48%;
-  right: -20px;
-  transform: translateY(-50%) rotate(6deg);
-  width: clamp(90px, 14vw, 150px);
+  right: -80px;
+  transform: translateY(-50%) rotate(7deg);
+  width: clamp(80px, 11vw, 130px);
   filter: drop-shadow(0 15px 25px rgba(35, 18, 11, 0.35));
   animation: floatMini 5s ease-in-out infinite;
   pointer-events: none;
@@ -1271,6 +1282,11 @@ section[id],
     width: 150px;
     height: 170px;
   }
+
+  .order-pedestal-cake {
+    right: -50px;
+    width: clamp(65px, 9vw, 95px);
+  }
 }
 
 @media (max-width: 500px) {
@@ -1294,6 +1310,13 @@ section[id],
 
   .hero-floating-cutout {
     width: clamp(95px, 24vw, 130px);
+  }
+
+  .order-pedestal-cake {
+    right: -15px;
+    top: 22%;
+    width: 58px;
+    opacity: 0.9;
   }
 
   .hero-pills-row {
