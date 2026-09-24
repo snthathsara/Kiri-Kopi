@@ -26,6 +26,7 @@ An editorial, high-end web experience crafted for **KÍRI KÓPI Flower Road**, l
 - **Live Restaurant Status Engine**:
   - Automatically calculates Sri Lanka time (`Asia/Colombo`) and displays real-time open/closed status for operating hours: **Daily 7:30 AM – 10:00 PM**.
 - **Location, Policy & Social Channels**:
+  - **WhatsApp & Call**: `077 760 9718` (`+94 77 760 9718`).
   - **Weekend Policy**: Clearly highlighted "No reservations on weekends, walk-ins only".
   - **Instagram**: [@kirikopi.flowerroad](https://www.instagram.com/kirikopi.flowerroad/).
   - **Location & Google Maps**: [76/1 Flower Road, Colombo 07](https://www.google.com/maps?q=6.9065372,79.8585982).
