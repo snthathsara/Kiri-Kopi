@@ -532,12 +532,15 @@
 
 .collage-cutout-floating {
   position: absolute;
-  top: -20px;
-  left: 20px;
-  width: 110px;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
-  transform: rotate(-10deg);
+  top: -24px;
+  left: 15px;
+  width: 90px;
+  height: auto;
+  filter: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.5));
+  transform: rotate(-8deg);
   animation: floatMini 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 5;
 }
 
 @keyframes floatMini {
