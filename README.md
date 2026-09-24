@@ -1,40 +1,33 @@
-# Café KOI & KOI Cakes — Official Web Experience
+# Warbler’s Cafe — Official Web Experience
 
-An editorial, high-end web experience crafted for **Café KOI** and their bespoke pastry studio **KOI Cakes**, located in the heart of historic **Kandy, Sri Lanka** (115/B D.S. Senanayake Veediya).
+An editorial, high-end web experience crafted for **Warbler’s Cafe**, located in the **Heart of Kandy, Sri Lanka** (108, D.S. Senanayake Veediya).
 
-Built with an organic botanical design language, tranquil atmosphere, fluid physics, and direct customer communication channels.
+**Western • Fusion • Sri Lankan | Flavorful food for every craving | Breakfast, Brunch & Lunch**
 
 ---
 
-## ✨ Design & Architectural Highlights
+## ✨ Design & Brand Highlights
 
-- **Luxury Velvet Blueberry & Lavender Plum Palette (Zero Blinding White)**:
-  - Specially calibrated 6-color editorial palette: Obsidian Blackberry (`#14081E`), Deep Royal Aubergine (`#261038`), Rich Velvet Mulberry (`#411B5E`), Classic Amethyst Orchid (`#682C96`), Soft Muted Wisteria / Lilac Fog (`#B69BD1`), and Pale Velvet Lavender Cream (`#F4EEFA`).
-  - Eye-friendly lavender cream gradient surfaces preventing glare at 100% monitor brightness.
-  - Deep atmospheric velvet plum gradients on feature banners and footers.
+- **Warm Coffee Brown, Cream White & Burnt Terracotta Theme**:
+  - Warm Espresso Brown (`#23120B`, `#351B0F`), Warm Oat Milk Cream (`#FAF6F0`, `#F4ECE1`), and Vibrant Burnt Terracotta / Roasted Amber (`#E05A2B`).
+  - Warm, eye-friendly cream surfaces with deep dark-roast banners and footer.
 - **Editorial Typography & Visual Hierarchy**:
-  - High-fashion editorial headlines powered by **Fraunces** with stacked repeating typography.
-  - Transparent PNG blueberry cheesecake hero cutout with layered depth.
-  - Clean Inter body typography and JetBrains Mono metadata accents.
-- **Direct WhatsApp Chat Integration**:
-  - Floating luxury WhatsApp capsule widget with live pulsing status indicator and smooth spring physics.
-  - Direct 1-click WhatsApp order actions for bespoke celebration cakes and table inquiries.
-  - Pre-populated inquiry messages connecting to Café KOI's official line (`+94 70 400 6600`).
-- **KOI Cakes Custom Studio Showcase**:
-  - Presentation of bespoke wedding tiers, celebratory bento mini cakes, and milestone cake commissions.
-  - Dual inquiry channels via WhatsApp and Instagram ([@koi_cakes](https://www.instagram.com/koi_cakes/)).
-- **Seasonal Menu & Dish Inspection**:
-  - Circular vignette photography, dietary badges, and tactile card interactions.
-  - Detailed dish modal with flavor tasting notes, craft details, and barista drink pairings.
-- **Table Reservation Engine & Interactive Hours**:
-  - Party size selector chips, date/time picker, and instant booking reference generator.
-  - `.ics` calendar invitation export.
-  - Live open/closed status pill synced with Kandy local operating hours.
+  - Chunky retro display serif powered by **Fraunces** with stacked repeating typography.
+  - "Coffee is a language in itself" typography ribbon matching Instagram visual branding.
+  - "IT'S BRUNCH O'CLOCK" bold graphic banner.
+  - Transparent cast-iron Shakshuka skillet cutout floating over the hero headline.
+- **Instagram Story Highlights Bar**:
+  - Sips ❤️, Ambience ❤️, Plates ❤️, Moments ❤️ with rich espresso circles, cream line-art icons, and interactive scroll triggers.
+- **Western • Fusion • Sri Lankan Menu**:
+  - Signature Shakshuka Skillet, Traditional Shepherd’s Pie, Toasted Brioche Chicken Melt, Sri Lankan Sunrise Bowls.
+  - Specialty Espresso Bar: Warbler's Iced Caramel Latte, Signature Iced Spanish Latte, Flat White & Cortado, Cold Brew Tonic.
+  - Fresh Bakes & Juices: Golden Brioche French Toast, Velvety Passionfruit Cheesecake, Tropical Passion & Mint Cooler.
+- **Direct WhatsApp Chat & Table Reservations**:
+  - Connected directly to Warbler’s Cafe official line (`+94 74 101 0540`).
+  - Instagram connection ([@cafewarblers](https://www.instagram.com/cafewarblers/)).
+  - Accurate Kandy operating hours: Mon - Sat | 8:30 AM - 6:00 PM (Closed Sunday).
 - **Light & Dark Theme Engine**:
-  - Strict Light Mode default on first visit (zero theme flashing).
-  - High-contrast Midnight Forest dark mode toggle.
-- **Fully Responsive**:
-  - Seamless layout scaling across ultra-wide desktop, tablet, and mobile devices.
+  - Warm Oat Milk Cream light mode default with Dark Roast Espresso dark mode.
 
 ---
 
@@ -42,37 +35,20 @@ Built with an organic botanical design language, tranquil atmosphere, fluid phys
 
 - **Markup & Styling**: Semantic HTML5, Modular Modern CSS (CSS Variables, clamp(), Flexbox, CSS Grid)
 - **Tooling & Bundler**: [Vite](https://vitejs.dev/)
-- **Icons**: Lucide Icons & Custom SVGs
-- **Typography**: Google Fonts (Fraunces, Inter, Playfair Display, JetBrains Mono)
+- **Icons**: Custom Handcrafted SVGs & Lucide
+- **Typography**: Google Fonts (Fraunces, Inter, JetBrains Mono)
 
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/snthathsara/Cafe-KOI.git
-
-# Navigate to project folder
-cd Cafe-KOI
-
 # Install dependencies
 npm install
 
-# Start local development server
+# Start development server
 npm run dev
 
-# Build optimized production bundle
+# Build for production
 npm run build
-
-# Preview production build locally
-npm run preview
 ```
-
----
-
-## 📍 Location & Contact
-
-- **Address**: 115/B D.S. Senanayake Veediya, Kandy, Sri Lanka (Moments from Kandy Lake & Queen's Hotel)
-- **Phone / WhatsApp**: +94 70 400 6600 · +94 77 626 2996
-- **Instagram**: [@cafe_koi](https://www.instagram.com/cafe_koi/) · [@koi_cakes](https://www.instagram.com/koi_cakes/)

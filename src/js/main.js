@@ -1,4 +1,4 @@
-// Main Application Bootstrap
+// Main Application Bootstrap for Warbler’s Cafe (Kandy)
 
 import { initTheme } from './theme.js';
 import { initNavbar } from './navbar.js';
@@ -18,6 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
   initAmbiance();
   initScrollAnimations();
 
+  // Story Highlights interaction (Sips, Ambience, Plates, Moments)
+  const highlightItems = document.querySelectorAll('.story-highlight-pill');
+  highlightItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const targetId = item.getAttribute('data-target');
+      if (targetId) {
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
   // Newsletter Form handler
   const newsletterForm = document.getElementById('newsletter-form');
   const newsletterMsg = document.getElementById('newsletter-note');
@@ -26,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const email = newsletterForm.querySelector('input[type="email"]')?.value;
       if (email && newsletterMsg) {
-        newsletterMsg.innerHTML = `<span style="color: var(--brand-blue); font-weight: 500;">✓ Thank you. You are subscribed to The KOI Dispatch.</span>`;
+        newsletterMsg.innerHTML = `<span style="color: var(--brand-orange); font-weight: 600;">✓ Thank you. You are subscribed to Warbler’s Journal.</span>`;
         newsletterForm.reset();
       }
     });

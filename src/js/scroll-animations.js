@@ -1,4 +1,4 @@
-// Scroll-Driven Reveal Animations Engine for Café KOI
+// Scroll-Driven Reveal Animations Engine for Warbler’s Cafe (Kandy)
 
 export function initScrollAnimations() {
   const revealElements = document.querySelectorAll(

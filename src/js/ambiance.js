@@ -1,4 +1,5 @@
-// Live Cafe Status Manager for Café KOI
+// Live Cafe Status Manager for Warbler’s Cafe (Kandy)
+// Operating Hours: Mon - Sat | 8:30 AM - 6:00 PM (Closed Sunday)
 
 export function initAmbiance() {
   updateCafeStatus();
@@ -12,16 +13,34 @@ function updateCafeStatus() {
   if (!statusLabel) return;
 
   const now = new Date();
+  const day = now.getDay(); // 0 is Sunday, 1 is Monday ... 6 is Saturday
   const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const currentTime = hours + minutes / 60;
 
-  // Operating Hours: 9:00 AM to 7:00 PM (19:00)
-  const isOpen = hours >= 9 && hours < 19;
+  // Sunday Closed
+  if (day === 0) {
+    statusLabel.textContent = 'Sunday Resting';
+    if (statusSub) statusSub.textContent = 'Reopening Monday at 8:30 AM in the Heart of Kandy';
+    return;
+  }
 
-  if (isOpen) {
+  // Mon - Sat: 8:30 AM to 6:00 PM (18:00)
+  const openTime = 8.5; // 8:30 AM
+  const closeTime = 18.0; // 6:00 PM
+
+  if (currentTime >= openTime && currentTime < closeTime) {
     statusLabel.textContent = 'Open Today';
-    if (statusSub) statusSub.textContent = 'Specialty coffee & fresh cakes until 7:00 PM';
+    if (statusSub) statusSub.textContent = 'Western, Fusion & Sri Lankan brunch until 6:00 PM';
+  } else if (currentTime < openTime) {
+    statusLabel.textContent = 'Opening Soon';
+    if (statusSub) statusSub.textContent = 'Brewing fresh coffee & preheating skillets at 8:30 AM';
   } else {
     statusLabel.textContent = 'Doors Resting';
-    if (statusSub) statusSub.textContent = 'Baking fresh cakes at 9:00 AM tomorrow in Kandy';
+    if (statusSub) {
+      statusSub.textContent = day === 6 
+        ? 'Reopening Monday at 8:30 AM in the Heart of Kandy'
+        : 'Reopening at 8:30 AM tomorrow in the Heart of Kandy';
+    }
   }
 }

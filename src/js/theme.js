@@ -1,6 +1,4 @@
-// Instant Theme Management (Light Mode as Default, with Dark Mode Option)
-
-const THEME_STORAGE_KEY = 'koi-theme-preference-v2';
+const THEME_STORAGE_KEY = 'warblers-theme-preference';
 
 export function initTheme() {
   const toggleBtn = document.getElementById('theme-toggle-btn');

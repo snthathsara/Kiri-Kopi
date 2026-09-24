@@ -1,4 +1,4 @@
-// Reservation & Direct Channels Interactions for Café KOI
+// Reservation & Direct Channels Interactions for Warbler’s Cafe (Kandy)
 
 export function initReservation() {
   // Direct channel action tracking or enhancements if needed

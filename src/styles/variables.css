@@ -1,74 +1,82 @@
 :root {
   /* ==========================================================================
-     Café KOI & KOI Cakes — Luxury Velvet Blueberry & Lavender Plum Palette
-     Exact Swatches: #14081E | #261038 | #411B5E | #682C96 | #B69BD1 | #F4EEFA
-     Zero blinding #FFFFFF — Eye-soothing velvet lavender milk & royal plum gradients
+     Warbler’s Cafe — Warm Brown, Cream White & Burnt Terracotta Theme
+     Western • Fusion • Sri Lankan | Breakfast, Brunch & Lunch | Heart of Kandy
+     Inspired by:
+     - Rich Espresso & Roasted Coffee Brown (#23120B, #351B0F, #4E2A19)
+     - Warm Oat Milk Cream & Clean White (#FAF6F0, #FFFFFF, #F4ECE1)
+     - Vibrant Burnt Terracotta / Roasted Amber (#E05A2B, #C84C20)
      ========================================================================== */
 
-  /* Light Theme (Velvet Lavender Cream & Deep Obsidian Plum) */
-  --bg-page: #F4EEFA;
-  --bg-page-gradient: linear-gradient(150deg, #FBF7FD 0%, #F4EEFA 45%, #EADBFA 100%);
-  --bg-surface: #FBF7FE;
-  --bg-surface-subtle: #EDE2F7;
-  --bg-surface-card: #F7F0FC;
-  --bg-pill: #E5D5F5;
-  --bg-pill-hover: #D8C2EE;
+  /* Light Theme (Oat Milk Cream, Clean Off-White & Dark Roast Espresso) */
+  --bg-page: #FAF6F0;
+  --bg-page-gradient: linear-gradient(160deg, #FDFBF7 0%, #FAF6F0 45%, #F4ECE1 100%);
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #F4ECE1;
+  --bg-surface-card: #FDFCFA;
+  --bg-pill: #EDE2D3;
+  --bg-pill-hover: #E2D3BF;
 
-  --text-primary: #14081E;
-  --text-secondary: #411B5E;
-  --text-muted: #6F4F8E;
+  --text-primary: #23120B;
+  --text-secondary: #5C3826;
+  --text-muted: #8A6753;
 
-  --border-color: #C8B1E3;
-  --border-subtle: #DECEF2;
-  --border-dark: #14081E;
+  --border-color: #DCCBBA;
+  --border-subtle: #E8DACB;
+  --border-dark: #23120B;
 
   /* Brand Palette Tokens */
-  --brand-deep: #14081E;
-  --brand-pine: #261038;
-  --brand-forest: #411B5E;
-  --brand-emerald: #682C96;
-  --brand-sage: #B69BD1;
-  --brand-mint: #F4EEFA;
+  --brand-deep: #1A0D07;
+  --brand-pine: #23120B;
+  --brand-forest: #351B0F;
+  --brand-emerald: #E05A2B;
+  --brand-sage: #D9C3AE;
+  --brand-mint: #FAF6F0;
 
   /* Aliased Core Tokens */
-  --brand-cobalt: #411B5E;
-  --brand-cobalt-hover: #261038;
-  --brand-cobalt-light: #EADBFA;
-  --brand-cobalt-rgb: 65, 27, 94;
+  --brand-cobalt: #351B0F;
+  --brand-cobalt-hover: #23120B;
+  --brand-cobalt-light: #F4ECE1;
+  --brand-cobalt-rgb: 53, 27, 15;
 
-  --brand-purple: #682C96;
-  --brand-purple-hover: #411B5E;
-  --brand-purple-light: #F4EEFA;
-  --brand-purple-rgb: 104, 44, 150;
+  --brand-purple: #E05A2B;
+  --brand-purple-hover: #C84C20;
+  --brand-purple-light: #FAF6F0;
+  --brand-purple-rgb: 224, 90, 43;
 
-  --accent-green: #682C96;
-  --accent-green-soft: #B69BD1;
-  --accent-lamp: #261038;
-  --accent-lamp-glow: rgba(104, 44, 150, 0.22);
+  --brand-orange: #E05A2B;
+  --brand-orange-hover: #C84C20;
+  --brand-brown: #351B0F;
+  --brand-brown-light: #4E2A19;
 
-  --btn-primary-bg: #411B5E;
-  --btn-primary-text: #F4EEFA;
+  --accent-green: #E05A2B;
+  --accent-green-soft: #D9C3AE;
+  --accent-lamp: #E05A2B;
+  --accent-lamp-glow: rgba(224, 90, 43, 0.22);
+
+  --btn-primary-bg: #351B0F;
+  --btn-primary-text: #FAF6F0;
   --btn-secondary-bg: transparent;
-  --btn-secondary-text: #411B5E;
-  --btn-secondary-border: #411B5E;
+  --btn-secondary-text: #351B0F;
+  --btn-secondary-border: #351B0F;
 
   /* Atmospheric Gradients */
-  --banner-gradient: linear-gradient(135deg, #14081E 0%, #261038 40%, #411B5E 75%, #682C96 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #261038 0%, #411B5E 55%, #682C96 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(182, 155, 209, 0.42) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #1A0D07 0%, #29150C 40%, #381E12 75%, #4E2A19 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #29150C 0%, #381E12 55%, #4A2818 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(224, 90, 43, 0.15) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Light Mode */
-  --nav-bar-bg: rgba(244, 238, 250, 0.94);
-  --nav-border: rgba(65, 27, 94, 0.16);
-  --nav-brand-color: #14081E;
-  --nav-btn-color: #411B5E;
-  --nav-btn-hover: #14081E;
-  --nav-btn-active-bg: #411B5E;
-  --nav-btn-active-text: #F4EEFA;
-  --nav-divider-color: rgba(65, 27, 94, 0.16);
-  --nav-control-bg: rgba(65, 27, 94, 0.08);
-  --nav-control-hover: rgba(65, 27, 94, 0.15);
-  --nav-shadow: 0 10px 30px rgba(20, 8, 30, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --nav-bar-bg: rgba(250, 246, 240, 0.94);
+  --nav-border: rgba(53, 27, 15, 0.14);
+  --nav-brand-color: #23120B;
+  --nav-btn-color: #5C3826;
+  --nav-btn-hover: #23120B;
+  --nav-btn-active-bg: #351B0F;
+  --nav-btn-active-text: #FAF6F0;
+  --nav-divider-color: rgba(53, 27, 15, 0.14);
+  --nav-control-bg: rgba(53, 27, 15, 0.06);
+  --nav-control-hover: rgba(53, 27, 15, 0.12);
+  --nav-shadow: 0 10px 30px rgba(35, 18, 11, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
 
   /* Typography Stacks */
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
@@ -104,60 +112,65 @@
 }
 
 /* ==========================================================================
-   Dark Theme (Midnight Blackberry & Glowing Wisteria Aurora)
+   Dark Theme (Dark Roast Espresso, Smoked Cacao & Warm Amber Glow)
    ========================================================================== */
 [data-theme="dark"] {
-  --bg-page: #0F0517;
-  --bg-page-gradient: linear-gradient(150deg, #170824 0%, #0F0517 50%, #09020E 100%);
-  --bg-surface: #1A0A28;
-  --bg-surface-subtle: #250F39;
-  --bg-surface-card: #1E0C30;
-  --bg-pill: #2F1449;
-  --bg-pill-hover: #3E1B5F;
+  --bg-page: #140A06;
+  --bg-page-gradient: linear-gradient(150deg, #1C0F08 0%, #140A06 50%, #0D0603 100%);
+  --bg-surface: #1E1009;
+  --bg-surface-subtle: #29160D;
+  --bg-surface-card: #22120A;
+  --bg-pill: #311A0F;
+  --bg-pill-hover: #3E2114;
 
-  --text-primary: #F4EEFA;
-  --text-secondary: #B69BD1;
-  --text-muted: #8E72AA;
+  --text-primary: #FAF6F0;
+  --text-secondary: #D9C3AE;
+  --text-muted: #9E836F;
 
-  --border-color: #3E1B5F;
-  --border-subtle: #2C1144;
-  --border-dark: #F4EEFA;
+  --border-color: #3D2214;
+  --border-subtle: #2C180E;
+  --border-dark: #FAF6F0;
 
-  --brand-cobalt: #B69BD1;
-  --brand-cobalt-hover: #F4EEFA;
-  --brand-cobalt-light: #261038;
-  --brand-cobalt-rgb: 182, 155, 209;
+  --brand-cobalt: #D9C3AE;
+  --brand-cobalt-hover: #FAF6F0;
+  --brand-cobalt-light: #29160D;
+  --brand-cobalt-rgb: 217, 195, 174;
 
-  --brand-purple: #F4EEFA;
-  --brand-purple-hover: #F4EEFA;
-  --brand-purple-light: #261038;
-  --brand-purple-rgb: 244, 238, 250;
+  --brand-purple: #E05A2B;
+  --brand-purple-hover: #FF7445;
+  --brand-purple-light: #FAF6F0;
+  --brand-purple-rgb: 224, 90, 43;
 
-  --accent-green: #B69BD1;
-  --accent-green-soft: #F4EEFA;
-  --accent-lamp: #F4EEFA;
-  --accent-lamp-glow: rgba(244, 238, 250, 0.25);
+  --brand-orange: #E05A2B;
+  --brand-orange-hover: #FF7445;
+  --brand-brown: #381E12;
+  --brand-brown-light: #FAF6F0;
 
-  --btn-primary-bg: #B69BD1;
-  --btn-primary-text: #0F0517;
+  --accent-green: #E05A2B;
+  --accent-green-soft: #D9C3AE;
+  --accent-lamp: #E05A2B;
+  --accent-lamp-glow: rgba(224, 90, 43, 0.3);
+
+  --btn-primary-bg: #E05A2B;
+  --btn-primary-text: #140A06;
   --btn-secondary-bg: transparent;
-  --btn-secondary-text: #F4EEFA;
-  --btn-secondary-border: #B69BD1;
+  --btn-secondary-text: #FAF6F0;
+  --btn-secondary-border: #E05A2B;
 
-  --banner-gradient: linear-gradient(135deg, #09020E 0%, #14081E 45%, #261038 80%, #411B5E 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #14081E 0%, #261038 50%, #411B5E 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(182, 155, 209, 0.22) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #0D0603 0%, #1A0D07 45%, #29150C 80%, #3D2113 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #1A0D07 0%, #29150C 50%, #381E12 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(224, 90, 43, 0.2) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Dark Mode */
-  --nav-bar-bg: rgba(26, 10, 40, 0.94);
-  --nav-border: rgba(182, 155, 209, 0.22);
-  --nav-brand-color: #F4EEFA;
-  --nav-btn-color: #B69BD1;
-  --nav-btn-hover: #F4EEFA;
-  --nav-btn-active-bg: #B69BD1;
-  --nav-btn-active-text: #0F0517;
-  --nav-divider-color: rgba(182, 155, 209, 0.18);
-  --nav-control-bg: rgba(182, 155, 209, 0.1);
-  --nav-control-hover: rgba(182, 155, 209, 0.2);
-  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(182, 155, 209, 0.15);
+  --nav-bar-bg: rgba(30, 16, 9, 0.94);
+  --nav-border: rgba(217, 195, 174, 0.16);
+  --nav-brand-color: #FAF6F0;
+  --nav-btn-color: #D9C3AE;
+  --nav-btn-hover: #FAF6F0;
+  --nav-btn-active-bg: #E05A2B;
+  --nav-btn-active-text: #140A06;
+  --nav-divider-color: rgba(217, 195, 174, 0.16);
+  --nav-control-bg: rgba(217, 195, 174, 0.08);
+  --nav-control-hover: rgba(217, 195, 174, 0.16);
+  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(224, 90, 43, 0.12);
 }
