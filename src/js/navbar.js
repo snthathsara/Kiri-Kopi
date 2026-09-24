@@ -4,7 +4,8 @@ export function initNavbar() {
   const track = document.getElementById('nav-links-track');
   const blob = document.getElementById('nav-active-blob');
   const links = Array.from(document.querySelectorAll('.nav-link'));
-  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const sections = Array.from(document.querySelectorAll('section[id], div[id]'));
+  const ctaBtn = document.querySelector('.nav-cta-btn');
   
   if (!track || !blob || links.length === 0) return;
 
@@ -15,19 +16,17 @@ export function initNavbar() {
 
   // Move blob to target element and ensure text color sync
   function setBlobTarget(targetElement) {
-    if (!targetElement) {
-      blob.style.opacity = '0';
-      return;
-    }
+    const el = targetElement || activeLink || links[0];
+    if (!el) return;
 
     // Keep text colors strictly in sync with where the blob is
     links.forEach(l => {
       l.classList.remove('has-blob');
     });
-    targetElement.classList.add('has-blob');
+    el.classList.add('has-blob');
 
     const trackRect = track.getBoundingClientRect();
-    const linkRect = targetElement.getBoundingClientRect();
+    const linkRect = el.getBoundingClientRect();
 
     const leftOffset = linkRect.left - trackRect.left;
     const width = linkRect.width;
@@ -96,6 +95,19 @@ export function initNavbar() {
     }
   });
 
+  // Mapping from all page section IDs to the appropriate nav link selector
+  const sectionToLinkMap = {
+    'hero': '#hero',
+    'highlights': '#highlights',
+    'story': '#story',
+    'brunch': '#story',
+    'menu': '#menu',
+    'order': '#menu',
+    'specialties': '#menu',
+    'about': '#about',
+    'reservations': '#about'
+  };
+
   // Real-time ScrollSpy
   let scrollTimeout;
   window.addEventListener('scroll', () => {
@@ -104,7 +116,6 @@ export function initNavbar() {
       scrollTimeout = null;
       if (isHovering || isManualScroll) return;
 
-      // Check if user is at the bottom of the page or in reservations section
       const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 70);
       const scrollPosition = window.scrollY + 200;
 
@@ -118,14 +129,23 @@ export function initNavbar() {
         }
       }
 
-      if (currentSectionId === 'reservations' || isAtBottom) {
-        links.forEach(l => l.classList.remove('is-active', 'has-blob'));
-        blob.style.opacity = '0';
+      // If at bottom or in reservations, keep About active and optionally highlight CTA
+      if (isAtBottom || currentSectionId === 'reservations') {
+        const aboutLink = links.find(l => l.getAttribute('href') === '#about');
+        if (aboutLink && aboutLink !== activeLink) {
+          setActiveLink(aboutLink, true);
+        } else if (!isHovering) {
+          setBlobTarget(aboutLink || activeLink);
+        }
+        if (ctaBtn) ctaBtn.classList.add('is-active');
         return;
+      } else {
+        if (ctaBtn) ctaBtn.classList.remove('is-active');
       }
 
-      if (currentSectionId) {
-        const matchingLink = links.find(l => l.getAttribute('href') === `#${currentSectionId}`);
+      if (currentSectionId && sectionToLinkMap[currentSectionId]) {
+        const targetHref = sectionToLinkMap[currentSectionId];
+        const matchingLink = links.find(l => l.getAttribute('href') === targetHref);
         if (matchingLink && matchingLink !== activeLink) {
           setActiveLink(matchingLink, true);
         }

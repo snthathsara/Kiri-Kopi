@@ -179,6 +179,12 @@
   transform: scale(1.03);
 }
 
+.nav-cta-btn.is-active {
+  background: var(--brand-orange);
+  color: var(--brand-deep) !important;
+  box-shadow: 0 0 14px rgba(255, 184, 0, 0.45);
+}
+
 /* Mobile Toggle */
 .mobile-toggle {
   display: none;
