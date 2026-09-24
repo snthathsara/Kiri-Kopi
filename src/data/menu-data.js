@@ -53,6 +53,47 @@ export const MENU_ITEMS = [
     prepTime: 'Made to Order'
   },
 
+  // --- BAKES & SWEET CRAVINGS ---
+  {
+    id: 'warbler-brioche-french-toast',
+    name: 'Golden Brioche French Toast',
+    category: 'bakes',
+    categoryLabel: 'Sweet Brunch',
+    price: 'Rs. 1,200',
+    description: 'Thick sliced egg brioche soaked in spiced cinnamon vanilla custard, pan-toasted in pure dairy butter with fresh berry compote and maple drizzle.',
+    notes: 'Custardy center, caramelized edges, tart wild berry contrast.',
+    dietary: ['Brunch Classic', 'Vegetarian'],
+    pairing: 'Signature Iced Spanish Latte',
+    image: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Pan-Toasted to Order'
+  },
+  {
+    id: 'warbler-velvety-cheesecake',
+    name: 'Velvety Baked Passionfruit Cheesecake',
+    category: 'bakes',
+    categoryLabel: 'Homemade Cakes',
+    price: 'Rs. 950',
+    description: 'Creamy slow-baked cream cheese layer infused with fresh island passionfruit curd on a buttery spiced biscuit base.',
+    notes: 'Silky cream cheese, tropical passionfruit tang, crunch base.',
+    dietary: ['House Signature', 'Baked Fresh'],
+    pairing: 'Artisan Flat White',
+    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Baked Daily in Kandy'
+  },
+  {
+    id: 'warbler-fudge-brownie',
+    name: 'Dark Chocolate Fudge Brownie',
+    category: 'bakes',
+    categoryLabel: 'Homemade Cakes',
+    price: 'Rs. 750',
+    description: 'Ultra-dense, molten-centered dark cocoa brownie finished with sea salt flakes and a drizzle of warm espresso caramel.',
+    notes: '70% dark Belgian cocoa, crinkled top, fudgy chew.',
+    dietary: ['Bestseller', 'Vegetarian'],
+    pairing: 'Warbler’s Iced Caramel Latte',
+    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
+    prepTime: 'Fresh Daily'
+  },
+
   // --- SIPS: SPECIALTY COFFEE & BEVERAGES ---
   {
     id: 'warbler-caramel-latte',
@@ -105,47 +146,6 @@ export const MENU_ITEMS = [
     pairing: 'Toasted Brioche Melt',
     image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
     prepTime: '18-Hour Slow Steep'
-  },
-
-  // --- BAKES & SWEET CRAVINGS ---
-  {
-    id: 'warbler-brioche-french-toast',
-    name: 'Golden Brioche French Toast',
-    category: 'bakes',
-    categoryLabel: 'Sweet Brunch',
-    price: 'Rs. 1,200',
-    description: 'Thick sliced egg brioche soaked in spiced cinnamon vanilla custard, pan-toasted in pure dairy butter with fresh berry compote and maple drizzle.',
-    notes: 'Custardy center, caramelized edges, tart wild berry contrast.',
-    dietary: ['Brunch Classic', 'Vegetarian'],
-    pairing: 'Signature Iced Spanish Latte',
-    image: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Pan-Toasted to Order'
-  },
-  {
-    id: 'warbler-velvety-cheesecake',
-    name: 'Velvety Baked Passionfruit Cheesecake',
-    category: 'bakes',
-    categoryLabel: 'Homemade Cakes',
-    price: 'Rs. 950',
-    description: 'Creamy slow-baked cream cheese layer infused with fresh island passionfruit curd on a buttery spiced biscuit base.',
-    notes: 'Silky cream cheese, tropical passionfruit tang, crunch base.',
-    dietary: ['House Signature', 'Baked Fresh'],
-    pairing: 'Artisan Flat White',
-    image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Baked Daily in Kandy'
-  },
-  {
-    id: 'warbler-fudge-brownie',
-    name: 'Dark Chocolate Fudge Brownie',
-    category: 'bakes',
-    categoryLabel: 'Homemade Cakes',
-    price: 'Rs. 750',
-    description: 'Ultra-dense, molten-centered dark cocoa brownie finished with sea salt flakes and a drizzle of warm espresso caramel.',
-    notes: '70% dark Belgian cocoa, crinkled top, fudgy chew.',
-    dietary: ['Bestseller', 'Vegetarian'],
-    pairing: 'Warbler’s Iced Caramel Latte',
-    image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80',
-    prepTime: 'Fresh Daily'
   },
 
   // --- FRESH JUICES & REFRESHERS ---

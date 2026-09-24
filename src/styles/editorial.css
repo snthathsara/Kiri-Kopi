@@ -5,6 +5,12 @@
    Zero harsh fluorescent glare — Warm coffeehouse aesthetic with vintage typography
    ========================================================================== */
 
+/* Scroll Offset for Fixed Floating Capsule Navbar */
+section[id],
+.editorial-row[id] {
+  scroll-margin-top: 90px;
+}
+
 /* Stacked Display Typography Header */
 .hero-editorial-section {
   position: relative;
@@ -34,7 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 46px;
   position: relative;
   z-index: 2;
   padding: 0 16px;
@@ -71,11 +77,16 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #25D366;
+  background-color: var(--brand-forest);
   display: inline-block;
   flex-shrink: 0;
-  box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 0 8px rgba(53, 27, 15, 0.55);
   animation: pulseDot 2s infinite ease-in-out;
+}
+
+[data-theme="dark"] .status-pulse-dot {
+  background-color: #E05A2B;
+  box-shadow: 0 0 10px rgba(224, 90, 43, 0.8);
 }
 
 .status-pulse-dot.is-closed {
@@ -86,7 +97,7 @@
 
 @keyframes pulseDot {
   0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.7; }
+  50% { transform: scale(1.25); opacity: 0.65; }
 }
 
 @keyframes pulseDotMuted {
@@ -126,7 +137,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 36px auto;
+  margin: 0 auto 42px auto;
   user-select: none;
   max-width: 100%;
   z-index: 2;
@@ -177,10 +188,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-4deg);
-  width: clamp(170px, 24vw, 320px);
+  width: clamp(135px, 18vw, 240px);
   height: auto;
   z-index: 5;
-  filter: drop-shadow(0 20px 30px rgba(35, 18, 11, 0.35));
+  filter: drop-shadow(0 16px 26px rgba(35, 18, 11, 0.32));
   animation: gentleFloat 5s ease-in-out infinite;
   pointer-events: none;
   user-select: none;
@@ -188,8 +199,8 @@
 }
 
 .hero-stacked-wrap:hover .hero-floating-cutout {
-  transform: translate(-50%, -53%) rotate(0deg) scale(1.06);
-  filter: drop-shadow(0 28px 45px rgba(35, 18, 11, 0.45));
+  transform: translate(-50%, -52%) rotate(0deg) scale(1.05);
+  filter: drop-shadow(0 24px 38px rgba(35, 18, 11, 0.42));
 }
 
 @keyframes gentleFloat {
@@ -1198,7 +1209,7 @@
   }
 
   .hero-floating-cutout {
-    width: clamp(150px, 32vw, 220px);
+    width: clamp(115px, 22vw, 165px);
   }
 
   .editorial-row,
@@ -1263,6 +1274,10 @@
 }
 
 @media (max-width: 500px) {
+  .hero-status-pill-wrap {
+    margin-bottom: 32px;
+  }
+
   .hero-status-badge {
     padding: 6px 14px;
     gap: 7px;
@@ -1278,7 +1293,7 @@
   }
 
   .hero-floating-cutout {
-    width: clamp(130px, 36vw, 170px);
+    width: clamp(95px, 24vw, 130px);
   }
 
   .hero-pills-row {
@@ -1341,13 +1356,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
-  background: #25D366;
-  color: #14081E;
+  background: var(--brand-forest);
+  color: #FAF6F0;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 3px 10px rgba(53, 27, 15, 0.45);
 }
 
 .whatsapp-icon-circle svg {
@@ -1363,21 +1378,21 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #25D366;
+  background: var(--brand-orange);
   border: 1.5px solid var(--brand-deep);
-  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  box-shadow: 0 0 0 0 rgba(224, 90, 43, 0.7);
   animation: waPulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 @keyframes waPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    box-shadow: 0 0 0 0 rgba(224, 90, 43, 0.7);
   }
   70% {
-    box-shadow: 0 0 0 6px rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 6px rgba(224, 90, 43, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    box-shadow: 0 0 0 0 rgba(224, 90, 43, 0);
   }
 }
 
