@@ -6,14 +6,14 @@
   padding-top: var(--section-spacing-y);
   padding-bottom: var(--section-spacing-y);
   position: relative;
-  background-color: #E8DED1;
+  background-color: var(--bg-surface-subtle);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   transition: var(--theme-transition);
 }
 
 [data-theme="dark"] .reservation-section {
-  background-color: #120803;
+  background-color: #12051D;
   border-top-color: var(--border-color);
   border-bottom-color: var(--border-color);
 }
@@ -29,7 +29,7 @@
 }
 
 [data-theme="dark"] .reservation-section .section-title {
-  color: #FAF6F0;
+  color: #FFFDF7;
 }
 
 .reservation-section .section-title em {
@@ -62,17 +62,17 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  background: #EDE4D8;
-  border: 1px solid rgba(53, 27, 15, 0.16);
+  background: var(--bg-surface);
+  border: 1px solid rgba(58, 18, 88, 0.16);
   border-radius: var(--radius-card);
   padding: 36px 32px;
-  box-shadow: 0 16px 40px rgba(35, 18, 11, 0.1);
+  box-shadow: 0 16px 40px rgba(35, 12, 56, 0.1);
   transition: var(--theme-transition);
 }
 
 [data-theme="dark"] .reservation-direct-card {
-  background: #1F1008;
-  border-color: rgba(224, 90, 43, 0.28);
+  background: #1C0A2E;
+  border-color: rgba(255, 184, 0, 0.35);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -92,7 +92,7 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--brand-forest);
-  background: rgba(53, 27, 15, 0.08);
+  background: rgba(58, 18, 88, 0.08);
   padding: 5px 14px;
   border-radius: var(--radius-full);
   width: fit-content;
@@ -100,7 +100,7 @@
 
 [data-theme="dark"] .direct-badge {
   color: var(--brand-orange);
-  background: rgba(224, 90, 43, 0.16);
+  background: rgba(255, 184, 0, 0.2);
 }
 
 .direct-badge-dot {
@@ -108,13 +108,13 @@
   height: 8px;
   border-radius: 50%;
   background-color: var(--brand-forest);
-  box-shadow: 0 0 8px rgba(53, 27, 15, 0.55);
+  box-shadow: 0 0 8px rgba(45, 15, 68, 0.55);
   animation: pulseDot 2s infinite;
 }
 
 [data-theme="dark"] .direct-badge-dot {
-  background-color: #E05A2B;
-  box-shadow: 0 0 8px rgba(224, 90, 43, 0.8);
+  background-color: #FFB800;
+  box-shadow: 0 0 8px rgba(255, 184, 0, 0.8);
 }
 
 .direct-booking-title {
@@ -144,8 +144,8 @@
   gap: 18px;
   padding: 18px 20px;
   border-radius: 16px;
-  border: 1px solid rgba(53, 27, 15, 0.14);
-  background: #FAF6F0;
+  border: 1px solid rgba(58, 18, 88, 0.14);
+  background: #FFFDF7;
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
@@ -153,13 +153,13 @@
 }
 
 [data-theme="dark"] .direct-channel-btn {
-  background: #2A160D;
+  background: #250E3D;
   border-color: rgba(255, 255, 255, 0.08);
 }
 
 .direct-channel-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(35, 18, 11, 0.12);
+  box-shadow: 0 10px 24px rgba(35, 12, 56, 0.12);
   border-color: var(--brand-orange);
 }
 
@@ -187,42 +187,42 @@
 .direct-channel-btn.is-whatsapp,
 .direct-channel-btn.is-instagram,
 .direct-channel-btn.is-maps {
-  background: linear-gradient(135deg, rgba(224, 90, 43, 0.05) 0%, #FAF6F0 65%);
-  border-color: rgba(53, 27, 15, 0.15);
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.08) 0%, #FFFDF7 65%);
+  border-color: rgba(58, 18, 88, 0.15);
 }
 
 [data-theme="dark"] .direct-channel-btn.is-whatsapp,
 [data-theme="dark"] .direct-channel-btn.is-instagram,
 [data-theme="dark"] .direct-channel-btn.is-maps {
-  background: linear-gradient(135deg, rgba(224, 90, 43, 0.1) 0%, #2A160D 65%);
-  border-color: rgba(224, 90, 43, 0.22);
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.15) 0%, #250E3D 65%);
+  border-color: rgba(255, 184, 0, 0.3);
 }
 
 .direct-channel-btn.is-whatsapp:hover,
 .direct-channel-btn.is-instagram:hover,
 .direct-channel-btn.is-maps:hover {
   border-color: var(--brand-orange);
-  background: linear-gradient(135deg, rgba(224, 90, 43, 0.14) 0%, #FAF6F0 65%);
+  background: linear-gradient(135deg, rgba(255, 184, 0, 0.2) 0%, #FFFDF7 65%);
 }
 
 .direct-channel-btn.is-whatsapp .direct-channel-icon,
 .direct-channel-btn.is-instagram .direct-channel-icon,
 .direct-channel-btn.is-maps .direct-channel-icon {
   background: var(--brand-forest);
-  color: #FAF6F0;
-  box-shadow: 0 6px 16px rgba(53, 27, 15, 0.35);
+  color: #FFFDF7;
+  box-shadow: 0 6px 16px rgba(45, 15, 68, 0.35);
 }
 
 .direct-channel-btn.is-whatsapp .direct-channel-icon svg {
-  fill: #FAF6F0;
+  fill: #FFFDF7;
 }
 
 .direct-channel-btn.is-instagram .direct-channel-icon svg {
-  stroke: #FAF6F0;
+  stroke: #FFFDF7;
 }
 
 .direct-channel-btn.is-maps .direct-channel-icon svg {
-  stroke: #FAF6F0;
+  stroke: #FFFDF7;
 }
 
 .direct-channel-meta {
@@ -350,8 +350,8 @@
 }
 
 .visit-card {
-  background: #EDE4D8;
-  border: 1px solid rgba(53, 27, 15, 0.16);
+  background: var(--bg-surface);
+  border: 1px solid rgba(58, 18, 88, 0.16);
   border-radius: var(--radius-card);
   padding: 26px;
   box-shadow: 0 10px 28px rgba(35, 18, 11, 0.08);
@@ -359,8 +359,8 @@
 }
 
 [data-theme="dark"] .visit-card {
-  background: #1F1008;
-  border-color: rgba(224, 90, 43, 0.28);
+  background: #1C0A2E;
+  border-color: rgba(255, 184, 0, 0.35);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 

@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const email = newsletterForm.querySelector('input[type="email"]')?.value;
       if (email && newsletterMsg) {
-        newsletterMsg.innerHTML = `<span style="color: var(--brand-orange); font-weight: 600;">✓ Thank you. You are subscribed to Warbler’s Journal.</span>`;
+        newsletterMsg.innerHTML = `<span style="color: var(--brand-orange); font-weight: 600;">✓ Thank you! You're on the list for MELT secret drops & burger specials.</span>`;
         newsletterForm.reset();
       }
     });

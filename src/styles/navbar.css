@@ -255,3 +255,12 @@
     display: flex;
   }
 }
+
+.nav-brand-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--brand-orange);
+  flex-shrink: 0;
+}

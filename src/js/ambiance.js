@@ -1,8 +1,7 @@
-// Live Cafe Status Manager for Warbler’s Cafe (Kandy)
-// Google Maps Operating Hours:
-// - Monday: 8:30 AM – 5:00 PM
-// - Tuesday – Saturday: 8:30 AM – 6:00 PM
-// - Sunday: Closed
+// Live Restaurant Status Manager for MELT Burgers (Dehiwala & Colombo 03)
+// Operating Hours:
+// - Monday – Sunday (Daily): 1:30 PM – 11:00 PM
+// - Dine In + Takeaway | 100% Halal
 
 export function initAmbiance() {
   updateCafeStatus();
@@ -45,7 +44,7 @@ function getSriLankaTime() {
   }
 }
 
-// Live Cafe Open/Closed Status
+// Live MELT Restaurant Open/Closed Status
 export function updateCafeStatus() {
   const statusBadge = document.getElementById('hero-status-badge');
   const pulseDot = document.getElementById('status-pulse-dot');
@@ -54,46 +53,30 @@ export function updateCafeStatus() {
 
   if (!statusLabel) return;
 
-  const { weekday, decimalTime } = getSriLankaTime();
+  const { decimalTime } = getSriLankaTime();
 
-  const openTime = 8.5; // 8:30 AM
+  const openTime = 13.5;  // 1:30 PM
+  const closeTime = 23.0; // 11:00 PM
 
   let isOpen = false;
   let label = 'Closed';
   let sub = '';
 
-  if (weekday === 'Sun') {
-    // Sunday Closed All Day
+  if (decimalTime >= openTime && decimalTime < closeTime) {
+    // Currently Open
+    isOpen = true;
+    label = 'Open Today';
+    sub = 'Closes at 11:00 PM · Dine In & Takeaway';
+  } else if (decimalTime < openTime) {
+    // Early before 1:30 PM
     isOpen = false;
-    label = 'Closed';
-    sub = 'Opens Monday at 8:30 AM';
+    label = 'Closed Now';
+    sub = 'Opens at 1:30 PM today in Dehiwala & Colombo 03';
   } else {
-    // Monday closes at 5:00 PM (17.0), Tue - Sat closes at 6:00 PM (18.0)
-    const closeTime = weekday === 'Mon' ? 17.0 : 18.0;
-    const closeStr = weekday === 'Mon' ? '5:00 PM' : '6:00 PM';
-
-    if (decimalTime < openTime) {
-      // Early morning before opening
-      isOpen = false;
-      label = 'Closed';
-      sub = 'Opens at 8:30 AM today';
-    } else if (decimalTime < closeTime) {
-      // Open during regular operating hours
-      isOpen = true;
-      label = 'Open Today';
-      sub = `Closes at ${closeStr}`;
-    } else {
-      // Closed in the evening after closing hours
-      isOpen = false;
-      label = 'Closed';
-      if (weekday === 'Sat') {
-        sub = 'Opens Monday at 8:30 AM';
-      } else if (weekday === 'Mon') {
-        sub = 'Opens Tuesday at 8:30 AM';
-      } else {
-        sub = 'Opens at 8:30 AM tomorrow';
-      }
-    }
+    // Late night after 11:00 PM
+    isOpen = false;
+    label = 'Closed Tonight';
+    sub = 'Opens at 1:30 PM tomorrow in Dehiwala & Colombo 03';
   }
 
   // Update UI Elements

@@ -1,84 +1,86 @@
 :root {
   /* ==========================================================================
-     Warbler’s Cafe — Warm Brown, Cream White & Burnt Terracotta Theme
-     Western • Fusion • Sri Lankan | Breakfast, Brunch & Lunch | Heart of Kandy
+     MELT Burgers — Signature Yellow & Royal Purple Theme
+     Burgers • Subs • Fries | Dine In + Takeaway | Dehiwala & Colombo 03
      Inspired by:
-     - Rich Espresso & Roasted Coffee Brown (#23120B, #351B0F, #4E2A19)
-     - Warm Oat Milk Cream & Clean White (#FAF6F0, #FFFFFF, #F4ECE1)
-     - Vibrant Burnt Terracotta / Roasted Amber (#E05A2B, #C84C20)
+     - Golden Melted Cheddar & Toasted Brioche Yellow (#FFB800, #F59E0B, #FEF3C7)
+     - Rich Midnight Royal Purple & Deep Violet (#260B3B, #3A1258, #52197A)
+     - Clean Warm Buttery Cream & Crisp White (#FFFDF7, #FFFFFF, #FFFBEB)
      ========================================================================== */
 
-  /* Light Theme (Oat Milk Cream, Clean Off-White & Dark Roast Espresso) */
-  --bg-page: #FAF6F0;
-  --bg-page-gradient: linear-gradient(160deg, #FDFBF7 0%, #FAF6F0 45%, #F4ECE1 100%);
+  /* Light Theme (Buttery Cream, Clean Off-White & Deep Royal Purple) */
+  --bg-page: #FFFDF7;
+  --bg-page-gradient: linear-gradient(165deg, #FFFDF9 0%, #FFFBEA 40%, #FEF3C7 100%);
   --bg-surface: #FFFFFF;
-  --bg-surface-subtle: #F4ECE1;
-  --bg-surface-card: #FDFCFA;
-  --bg-pill: #EDE2D3;
-  --bg-pill-hover: #E2D3BF;
+  --bg-surface-subtle: #FAF5FF;
+  --bg-surface-card: #FFFFFF;
+  --bg-pill: #F3E8FF;
+  --bg-pill-hover: #E9D5FF;
 
-  --text-primary: #23120B;
-  --text-secondary: #5C3826;
-  --text-muted: #8A6753;
+  --text-primary: #260B3B;
+  --text-secondary: #59267C;
+  --text-muted: #8257A3;
 
-  --border-color: #DCCBBA;
-  --border-subtle: #E8DACB;
-  --border-dark: #23120B;
+  --border-color: #EADBF8;
+  --border-subtle: #F2E8FC;
+  --border-dark: #260B3B;
 
   /* Brand Palette Tokens */
-  --brand-deep: #1A0D07;
-  --brand-pine: #23120B;
-  --brand-forest: #351B0F;
-  --brand-emerald: #E05A2B;
-  --brand-sage: #D9C3AE;
-  --brand-mint: #FAF6F0;
+  --brand-deep: #160624;
+  --brand-pine: #260B3B;
+  --brand-forest: #3A1258;
+  --brand-emerald: #FFB800;
+  --brand-sage: #C084FC;
+  --brand-mint: #FFFDF7;
 
   /* Aliased Core Tokens */
-  --brand-cobalt: #351B0F;
-  --brand-cobalt-hover: #23120B;
-  --brand-cobalt-light: #F4ECE1;
-  --brand-cobalt-rgb: 53, 27, 15;
+  --brand-cobalt: #3A1258;
+  --brand-cobalt-hover: #260B3B;
+  --brand-cobalt-light: #F5EEFD;
+  --brand-cobalt-rgb: 58, 18, 88;
 
-  --brand-purple: #E05A2B;
-  --brand-purple-hover: #C84C20;
-  --brand-purple-light: #FAF6F0;
-  --brand-purple-rgb: 224, 90, 43;
+  --brand-purple: #3A1258;
+  --brand-purple-hover: #260B3B;
+  --brand-purple-light: #F3E8FF;
+  --brand-purple-rgb: 58, 18, 88;
 
-  --brand-orange: #E05A2B;
-  --brand-orange-hover: #C84C20;
-  --brand-brown: #351B0F;
-  --brand-brown-light: #4E2A19;
+  --brand-orange: #FFB800;
+  --brand-orange-hover: #EAA800;
+  --brand-yellow: #FFB800;
+  --brand-yellow-light: #FEF3C7;
+  --brand-brown: #3A1258;
+  --brand-brown-light: #52197A;
 
-  --accent-green: #E05A2B;
-  --accent-green-soft: #D9C3AE;
-  --accent-lamp: #E05A2B;
-  --accent-lamp-glow: rgba(224, 90, 43, 0.22);
+  --accent-green: #FFB800;
+  --accent-green-soft: #FEF3C7;
+  --accent-lamp: #FFB800;
+  --accent-lamp-glow: rgba(255, 184, 0, 0.35);
 
-  --btn-primary-bg: #351B0F;
-  --btn-primary-text: #FAF6F0;
-  --btn-secondary-bg: transparent;
-  --btn-secondary-text: #351B0F;
-  --btn-secondary-border: #351B0F;
+  --btn-primary-bg: #3A1258;
+  --btn-primary-text: #FFB800;
+  --btn-secondary-bg: #FFB800;
+  --btn-secondary-text: #260B3B;
+  --btn-secondary-border: #FFB800;
 
   /* Atmospheric Gradients */
-  --banner-gradient: linear-gradient(135deg, #1A0D07 0%, #29150C 40%, #381E12 75%, #4E2A19 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #29150C 0%, #381E12 55%, #4A2818 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(224, 90, 43, 0.15) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #180728 0%, #2A0E43 40%, #3A1258 75%, #52197A 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #220B36 0%, #33104E 55%, #46166A 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(255, 184, 0, 0.22) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Light Mode */
-  --nav-bar-bg: rgba(250, 246, 240, 0.94);
-  --nav-border: rgba(53, 27, 15, 0.14);
-  --nav-brand-color: #23120B;
-  --nav-btn-color: #5C3826;
-  --nav-btn-hover: #23120B;
-  --nav-btn-active-bg: #351B0F;
-  --nav-btn-active-text: #FAF6F0;
-  --nav-divider-color: rgba(53, 27, 15, 0.14);
-  --nav-control-bg: rgba(53, 27, 15, 0.06);
-  --nav-control-hover: rgba(53, 27, 15, 0.12);
-  --nav-shadow: 0 10px 30px rgba(35, 18, 11, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --nav-bar-bg: rgba(255, 253, 247, 0.94);
+  --nav-border: rgba(58, 18, 88, 0.14);
+  --nav-brand-color: #260B3B;
+  --nav-btn-color: #59267C;
+  --nav-btn-hover: #260B3B;
+  --nav-btn-active-bg: #3A1258;
+  --nav-btn-active-text: #FFB800;
+  --nav-divider-color: rgba(58, 18, 88, 0.14);
+  --nav-control-bg: rgba(58, 18, 88, 0.06);
+  --nav-control-hover: rgba(58, 18, 88, 0.12);
+  --nav-shadow: 0 10px 30px rgba(45, 15, 68, 0.1), 0 2px 8px rgba(0, 0, 0, 0.04);
 
-  /* Typography Stacks */
+  /* Typography Stacks (Preserved from Warbler's Cafe) */
   --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
@@ -112,65 +114,67 @@
 }
 
 /* ==========================================================================
-   Dark Theme (Dark Roast Espresso, Smoked Cacao & Warm Amber Glow)
+   Dark Theme (Deep Midnight Purple, Electric Violet & Warm Cheese Gold)
    ========================================================================== */
 [data-theme="dark"] {
-  --bg-page: #140A06;
-  --bg-page-gradient: linear-gradient(150deg, #1C0F08 0%, #140A06 50%, #0D0603 100%);
-  --bg-surface: #1E1009;
-  --bg-surface-subtle: #29160D;
-  --bg-surface-card: #22120A;
-  --bg-pill: #311A0F;
-  --bg-pill-hover: #3E2114;
+  --bg-page: #12051D;
+  --bg-page-gradient: linear-gradient(155deg, #180727 0%, #12051D 50%, #0B0212 100%);
+  --bg-surface: #1C0A2E;
+  --bg-surface-subtle: #250E3D;
+  --bg-surface-card: #1F0B33;
+  --bg-pill: #311352;
+  --bg-pill-hover: #40196A;
 
-  --text-primary: #FAF6F0;
-  --text-secondary: #D9C3AE;
-  --text-muted: #9E836F;
+  --text-primary: #FFFDF7;
+  --text-secondary: #E4CEF8;
+  --text-muted: #AA87CE;
 
-  --border-color: #3D2214;
-  --border-subtle: #2C180E;
-  --border-dark: #FAF6F0;
+  --border-color: #351554;
+  --border-subtle: #290F42;
+  --border-dark: #FFB800;
 
-  --brand-cobalt: #D9C3AE;
-  --brand-cobalt-hover: #FAF6F0;
-  --brand-cobalt-light: #29160D;
-  --brand-cobalt-rgb: 217, 195, 174;
+  --brand-cobalt: #E4CEF8;
+  --brand-cobalt-hover: #FFFDF7;
+  --brand-cobalt-light: #250E3D;
+  --brand-cobalt-rgb: 228, 206, 248;
 
-  --brand-purple: #E05A2B;
-  --brand-purple-hover: #FF7445;
-  --brand-purple-light: #FAF6F0;
-  --brand-purple-rgb: 224, 90, 43;
+  --brand-purple: #A855F7;
+  --brand-purple-hover: #C084FC;
+  --brand-purple-light: #250E3D;
+  --brand-purple-rgb: 168, 85, 247;
 
-  --brand-orange: #E05A2B;
-  --brand-orange-hover: #FF7445;
-  --brand-brown: #381E12;
-  --brand-brown-light: #FAF6F0;
+  --brand-orange: #FFB800;
+  --brand-orange-hover: #FCD34D;
+  --brand-yellow: #FFB800;
+  --brand-yellow-light: #3D2908;
+  --brand-brown: #250E3D;
+  --brand-brown-light: #FFFDF7;
 
-  --accent-green: #E05A2B;
-  --accent-green-soft: #D9C3AE;
-  --accent-lamp: #E05A2B;
-  --accent-lamp-glow: rgba(224, 90, 43, 0.3);
+  --accent-green: #FFB800;
+  --accent-green-soft: #E4CEF8;
+  --accent-lamp: #FFB800;
+  --accent-lamp-glow: rgba(255, 184, 0, 0.4);
 
-  --btn-primary-bg: #E05A2B;
-  --btn-primary-text: #140A06;
+  --btn-primary-bg: #FFB800;
+  --btn-primary-text: #160624;
   --btn-secondary-bg: transparent;
-  --btn-secondary-text: #FAF6F0;
-  --btn-secondary-border: #E05A2B;
+  --btn-secondary-text: #FFFDF7;
+  --btn-secondary-border: #FFB800;
 
-  --banner-gradient: linear-gradient(135deg, #0D0603 0%, #1A0D07 45%, #29150C 80%, #3D2113 100%);
-  --banner-gradient-subtle: linear-gradient(145deg, #1A0D07 0%, #29150C 50%, #381E12 100%);
-  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(224, 90, 43, 0.2) 0%, transparent 60%);
+  --banner-gradient: linear-gradient(135deg, #0A0210 0%, #150624 45%, #230B3B 80%, #351257 100%);
+  --banner-gradient-subtle: linear-gradient(145deg, #150624 0%, #240B3C 50%, #341255 100%);
+  --ambient-beam: radial-gradient(ellipse at 15% 10%, rgba(255, 184, 0, 0.22) 0%, transparent 60%);
 
   /* Floating Navbar Tokens — Dark Mode */
-  --nav-bar-bg: rgba(30, 16, 9, 0.94);
-  --nav-border: rgba(217, 195, 174, 0.16);
-  --nav-brand-color: #FAF6F0;
-  --nav-btn-color: #D9C3AE;
-  --nav-btn-hover: #FAF6F0;
-  --nav-btn-active-bg: #E05A2B;
-  --nav-btn-active-text: #140A06;
-  --nav-divider-color: rgba(217, 195, 174, 0.16);
-  --nav-control-bg: rgba(217, 195, 174, 0.08);
-  --nav-control-hover: rgba(217, 195, 174, 0.16);
-  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(224, 90, 43, 0.12);
+  --nav-bar-bg: rgba(28, 10, 46, 0.94);
+  --nav-border: rgba(228, 206, 248, 0.16);
+  --nav-brand-color: #FFFDF7;
+  --nav-btn-color: #E4CEF8;
+  --nav-btn-hover: #FFFDF7;
+  --nav-btn-active-bg: #FFB800;
+  --nav-btn-active-text: #160624;
+  --nav-divider-color: rgba(228, 206, 248, 0.16);
+  --nav-control-bg: rgba(228, 206, 248, 0.08);
+  --nav-control-hover: rgba(228, 206, 248, 0.16);
+  --nav-shadow: 0 10px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(255, 184, 0, 0.15);
 }

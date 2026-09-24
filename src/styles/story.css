@@ -18,8 +18,8 @@
 }
 
 [data-theme="dark"] .story-panel {
-  background: linear-gradient(180deg, #1C1915 0%, #161411 100%);
-  border-color: #2E2A24;
+  background: linear-gradient(180deg, #1C0A2E 0%, #160624 100%);
+  border-color: #351554;
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
 }
 
