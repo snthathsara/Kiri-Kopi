@@ -188,10 +188,10 @@ section[id],
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-4deg);
-  width: clamp(135px, 18vw, 240px);
+  width: clamp(65px, 8.5vw, 105px);
   height: auto;
   z-index: 5;
-  filter: drop-shadow(0 16px 26px rgba(35, 18, 11, 0.32));
+  filter: drop-shadow(0 10px 18px rgba(26, 18, 11, 0.28));
   animation: gentleFloat 5s ease-in-out infinite;
   pointer-events: none;
   user-select: none;
@@ -200,7 +200,7 @@ section[id],
 
 .hero-stacked-wrap:hover .hero-floating-cutout {
   transform: translate(-50%, -52%) rotate(0deg) scale(1.05);
-  filter: drop-shadow(0 24px 38px rgba(35, 18, 11, 0.42));
+  filter: drop-shadow(0 14px 24px rgba(26, 18, 11, 0.35));
 }
 
 @keyframes gentleFloat {
@@ -471,9 +471,15 @@ section[id],
   font-family: var(--font-sans);
   font-size: clamp(48px, 10vw, 116px);
   font-weight: 900;
-  color: var(--brand-yellow);
+  color: #C97F16;
   letter-spacing: 0.02em;
   margin: 4px 0;
+  text-shadow: 0 2px 10px rgba(201, 127, 22, 0.15);
+}
+
+[data-theme="dark"] .brunch-line-highlight {
+  color: var(--brand-yellow);
+  text-shadow: 0 0 20px rgba(246, 229, 154, 0.4);
 }
 
 .brunch-line-bottom {
@@ -1008,6 +1014,17 @@ section[id],
   transform: scale(1.05);
 }
 
+.packaging-card-btn-outline {
+  background-color: transparent !important;
+  border: 1.5px solid var(--brand-yellow) !important;
+  color: var(--brand-yellow) !important;
+}
+
+.packaging-card-btn-outline:hover {
+  background-color: var(--brand-yellow) !important;
+  color: #1A120B !important;
+}
+
 /* ==========================================================================
    Solid Warm Brown Gradient Band: Our Specialties
    ========================================================================== */
@@ -1351,8 +1368,9 @@ section[id],
 }
 
 /* ==========================================================================
-   WhatsApp Chat Integration (Floating Luxury Pill & Contextual Actions)
+   Instagram Floating Pill & Contextual Actions
    ========================================================================== */
+.floating-instagram-btn,
 .floating-whatsapp-btn {
   position: fixed;
   bottom: 26px;
@@ -1363,10 +1381,10 @@ section[id],
   gap: 10px;
   padding: 10px 18px 10px 12px;
   background: var(--brand-deep);
-  color: var(--brand-mint) !important;
+  color: #FFFDF7 !important;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-full);
-  box-shadow: 0 12px 32px rgba(35, 18, 11, 0.28), 0 2px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 32px rgba(26, 18, 11, 0.28), 0 2px 8px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   font-family: var(--font-sans);
   cursor: pointer;
@@ -1375,84 +1393,63 @@ section[id],
   transition: transform 0.25s var(--spring-ease), box-shadow 0.25s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
+.floating-instagram-btn:hover,
 .floating-whatsapp-btn:hover {
   transform: translateY(-4px) scale(1.03);
   background: var(--brand-forest);
-  border-color: var(--brand-orange);
-  box-shadow: 0 18px 40px rgba(35, 18, 11, 0.38), 0 0 20px rgba(224, 90, 43, 0.3);
-  color: var(--brand-mint) !important;
+  border-color: var(--brand-yellow);
+  box-shadow: 0 18px 40px rgba(26, 18, 11, 0.38), 0 0 20px rgba(246, 229, 154, 0.3);
+  color: #FFFDF7 !important;
 }
 
+.floating-instagram-btn:active,
 .floating-whatsapp-btn:active {
   transform: translateY(-1px) scale(0.98);
 }
 
-.whatsapp-icon-circle {
-  position: relative;
+.floating-instagram-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: var(--brand-forest);
-  color: #FFFDF7;
+  background: var(--brand-yellow);
+  color: #1A120B;
   flex-shrink: 0;
-  box-shadow: 0 3px 10px rgba(53, 27, 15, 0.45);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
-.whatsapp-icon-circle svg {
-  width: 18px;
-  height: 18px;
-  fill: currentColor;
+.floating-instagram-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke: #1A120B;
+  fill: none;
+  display: block;
 }
 
-.whatsapp-pulse-dot {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--brand-orange);
-  border: 1.5px solid var(--brand-deep);
-  box-shadow: 0 0 0 0 rgba(224, 90, 43, 0.7);
-  animation: waPulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
-}
-
-@keyframes waPulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(224, 90, 43, 0.7);
-  }
-  70% {
-    box-shadow: 0 0 0 6px rgba(224, 90, 43, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(224, 90, 43, 0);
-  }
-}
-
-.whatsapp-btn-text {
+.floating-instagram-text {
   display: flex;
   flex-direction: column;
   text-align: left;
   line-height: 1.25;
 }
 
-.whatsapp-btn-primary {
+.floating-instagram-handle {
   font-size: 13.5px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: var(--brand-mint);
+  color: #FFFDF7;
 }
 
-.whatsapp-btn-sub {
+.floating-instagram-sub {
   font-size: 11px;
   font-weight: 500;
-  color: var(--brand-sage);
+  color: var(--brand-yellow);
 }
 
-/* Contextual Visit & Reservation WhatsApp Action */
+/* Contextual Visit & Reservation Map Action */
+.visit-map-action,
 .visit-whatsapp-action {
   display: inline-flex;
   align-items: center;
@@ -1463,42 +1460,60 @@ section[id],
   padding: 12px 18px;
   border-radius: var(--radius-full);
   background: var(--brand-forest);
-  color: var(--brand-mint) !important;
+  color: #FFFDF7 !important;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   border: 1px solid var(--border-color);
-  transition: transform 0.2s var(--spring-ease), background 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s var(--spring-ease), background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 }
 
+.visit-map-action:hover,
 .visit-whatsapp-action:hover {
   transform: translateY(-2px);
-  background: var(--brand-orange);
+  background: var(--brand-yellow);
+  color: #1A120B !important;
   box-shadow: 0 6px 18px rgba(35, 18, 11, 0.2);
 }
 
-.visit-whatsapp-action .whatsapp-icon-circle {
-  width: 24px;
-  height: 24px;
+.visit-map-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--brand-yellow);
+  color: #1A120B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.visit-whatsapp-action .whatsapp-icon-circle svg {
-  width: 14px;
-  height: 14px;
+.visit-map-action:hover .visit-map-icon-circle {
+  background: #1A120B;
+  color: var(--brand-yellow);
+}
+
+.visit-map-icon-circle svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  display: block;
 }
 
 @media (max-width: 600px) {
+  .floating-instagram-btn,
   .floating-whatsapp-btn {
     bottom: 20px;
     right: 18px;
     padding: 8px 16px 8px 10px;
     gap: 8px;
   }
-  .whatsapp-btn-primary {
+  .floating-instagram-handle {
     font-size: 13px;
     white-space: nowrap;
   }
-  .whatsapp-btn-sub {
+  .floating-instagram-sub {
     display: none;
   }
 }

@@ -48,7 +48,26 @@ export function initNavbar() {
     }
   }
 
-  // Hover transitions
+  // Helper for smooth scrolling to an ID
+  function scrollToSection(targetId, linkedNavElement) {
+    const targetSection = document.querySelector(targetId);
+    if (!targetSection) return;
+
+    isManualScroll = true;
+    if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
+    manualScrollTimeout = setTimeout(() => {
+      isManualScroll = false;
+    }, 950);
+
+    if (linkedNavElement) {
+      setActiveLink(linkedNavElement, true);
+      setBlobTarget(linkedNavElement);
+    }
+
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Hover & Click transitions on main links
   links.forEach(link => {
     link.addEventListener('mouseenter', () => {
       isHovering = true;
@@ -58,25 +77,23 @@ export function initNavbar() {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
       if (targetId && targetId.startsWith('#')) {
-        const targetSection = document.querySelector(targetId);
-        if (targetSection) {
-          e.preventDefault();
-
-          // Lock scrollspy during smooth scroll animation
-          isManualScroll = true;
-          if (manualScrollTimeout) clearTimeout(manualScrollTimeout);
-          manualScrollTimeout = setTimeout(() => {
-            isManualScroll = false;
-          }, 850);
-
-          setActiveLink(link, true);
-          setBlobTarget(link);
-
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        e.preventDefault();
+        scrollToSection(targetId, link);
       }
     });
   });
+
+  // Top CTA button ("Hours & Visit")
+  if (ctaBtn) {
+    ctaBtn.addEventListener('click', (e) => {
+      const targetId = ctaBtn.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        e.preventDefault();
+        const visitLink = links.find(l => l.getAttribute('href') === '#reservations');
+        scrollToSection(targetId, visitLink);
+      }
+    });
+  }
 
   track.addEventListener('mouseleave', () => {
     isHovering = false;
@@ -105,7 +122,8 @@ export function initNavbar() {
     'order': '#menu',
     'specialties': '#menu',
     'about': '#about',
-    'reservations': '#about'
+    'reservations': '#reservations',
+    'visit': '#reservations'
   };
 
   // Real-time ScrollSpy
@@ -129,13 +147,13 @@ export function initNavbar() {
         }
       }
 
-      // If at bottom or in reservations, keep About active and optionally highlight CTA
-      if (isAtBottom || currentSectionId === 'reservations') {
-        const aboutLink = links.find(l => l.getAttribute('href') === '#about');
-        if (aboutLink && aboutLink !== activeLink) {
-          setActiveLink(aboutLink, true);
+      // If at bottom or in reservations / visit section, activate Visit link
+      if (isAtBottom || currentSectionId === 'reservations' || currentSectionId === 'visit') {
+        const visitLink = links.find(l => l.getAttribute('href') === '#reservations');
+        if (visitLink && visitLink !== activeLink) {
+          setActiveLink(visitLink, true);
         } else if (!isHovering) {
-          setBlobTarget(aboutLink || activeLink);
+          setBlobTarget(visitLink || activeLink);
         }
         if (ctaBtn) ctaBtn.classList.add('is-active');
         return;
@@ -176,8 +194,20 @@ function initMobileNav() {
   });
 
   mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      toggleDrawer(false);
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          e.preventDefault();
+          toggleDrawer(false);
+          setTimeout(() => {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }, 150);
+        }
+      } else {
+        toggleDrawer(false);
+      }
     });
   });
 
