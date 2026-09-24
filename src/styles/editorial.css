@@ -905,13 +905,22 @@ section[id],
 
 .order-pedestal-cake {
   position: absolute;
-  top: 48%;
-  right: -80px;
-  transform: translateY(-50%) rotate(7deg);
+  top: 10px;
+  right: -70px;
+  transform: rotate(6deg);
   width: clamp(80px, 11vw, 130px);
   filter: drop-shadow(0 15px 25px rgba(35, 18, 11, 0.35));
-  animation: floatMini 5s ease-in-out infinite;
+  animation: floatCup 4s ease-in-out infinite;
   pointer-events: none;
+}
+
+@keyframes floatCup {
+  0%, 100% {
+    transform: translateY(0) rotate(6deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(9deg);
+  }
 }
 
 /* 3 Rounded Deep Roast Packaging Cards */
@@ -1284,7 +1293,8 @@ section[id],
   }
 
   .order-pedestal-cake {
-    right: -50px;
+    top: 5px;
+    right: -45px;
     width: clamp(65px, 9vw, 95px);
   }
 }
@@ -1313,9 +1323,9 @@ section[id],
   }
 
   .order-pedestal-cake {
+    top: 0px;
     right: -15px;
-    top: 22%;
-    width: 58px;
+    width: 55px;
     opacity: 0.9;
   }
 
